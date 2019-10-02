@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Albums</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="bg-primary">
+
+<div class="container">
+    <div class="col">
+        <div class="row align-center">
+            <img src="https://via.placeholder.com/2000x150?text=Hello+Music+Now" class="img-fluid">
+        </div>
+        <div class="row">
+            <div class="col-4 bg-secondary text-white">
+                <div class="row">
+                    <img src="images/placeholder-face-big.png"
+                         class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
+                         alt="Profile Image Holder">
+                    <p class="col-12 font-weight-bolder center">Username</p>
+                </div>
+                <hr>
+                <div class="row ml-3 font-weight-bolder mt-4">
+                    <p><a class="link-unstyled" href="profile.html">Account Overview</a></p>
+                </div>
+                <hr>
+                <div class="row ml-3 mt-2">
+                    <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
+                </div>
+                <hr>
+                <div class="row ml-3 mt-2">
+                    <p><a class="link-unstyled" href="songs.html">My Songs</a></p>
+                </div>
+                <hr>
+                <div class="row ml-3 mt-2">
+                    <p><a class="link-unstyled" href="login.html">Log Out</a></p>
+                </div>
+                <hr>
+            </div>
+            <div class="col-8 bg-light">
+                <div class="row mt-4 ml-3">
+                    <h1>My Albums</h1>
+                </div>
+                <div class="row mt-4 ml-3">
+                    <h2>Artists</h2>
+                </div>
+                <form action="updateprofile.html" method="get" id="profile">
+                    <fieldset>
+                        <!-- Album Name-->
+                        <div class="form-group" background-color="black">
+                            <label class="col-md-4 control-label" for="albumName">Heart Break on a Full Moon</label>
+                            <div class="col-md-8">
+                                <p><b>Chris Brown</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Album Two -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="albumTwo">Purpose</label>
+                            <div class="col-md-8">
+                                <p><b>Justin Bieber</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Album Three-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="albumThree">Free Spirit</label>
+                            <div class="col-md-8">
+                                <p><b>Khalil</b></p>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Album Four-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="albumFour">Here as in Heaven</label>
+                            <div class="col-md-8">
+                                <p><b>Elevation Worship</b></p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="row ml-3 mb-3">
+                    <button type="edit" form="profile" value="edit">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
