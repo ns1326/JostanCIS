@@ -46,38 +46,40 @@
                     <h1>My Songs</h1>
                 </div>
                 <!--Table-->
-                <table class="table table-dark">
-                    <thead>
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Album</th>
-                        <th scope="col">Artist</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">1</th>
-                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">Beautiful People</a></td>
-                        <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
-                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td><a class="songs-link-unstyled" href="title/IDon'tCare.html">I Don't Care</a></td>
-                        <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
-                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td><a class="songs-link-unstyled" href="title/TakeMeBackToLondon.html">Take Me Back to London</a></td>
-                        <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
-                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form action="addsong.html" method="get" id="songs">
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Album</th>
+                            <th scope="col">Artist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">Beautiful People (feat. Khalid)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td><a class="songs-link-unstyled" href="title/IDontCare.html">I Don't Care (with Justin Bieber)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td><a class="songs-link-unstyled" href="title/TakeMeBackToLondon.html">Take Me Back to London (feat. Stormzy)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/No.6CollaborationProject.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
                 <div class="row ml-3 mb-3">
-                    <button type="update" form="profile" value="update">Update</button>
+                    <button type="add" form="songs" value="add">Add Songs</button>
                 </div>
             </div>
         </div>
