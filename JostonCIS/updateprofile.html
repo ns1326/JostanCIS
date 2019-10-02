@@ -43,12 +43,9 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>Account Overview</h1>
+                    <h1>Edit Profile</h1>
                 </div>
-                <div class="row mt-4 ml-3">
-                    <h2>Profile</h2>
-                </div>
-                <form action="updateprofile.html" method="get" id="profile">
+                <form action="profile.html" method="get" id="updateprofile">
                     <fieldset>
                         <!-- Username Text input-->
                         <div class="form-group">
@@ -61,13 +58,18 @@
                         <hr>
                         <!-- Password Text input-->
                         <div class="form-group">
-                                <label class="col-md-4 control-label" for="password">Password</label>
-                                <div class="col-md-8">
-                                    <input id="password" name="password" type="text" placeholder="J73j2o3n3"
-                                           class="form-control input-md">
-                                </div>
+                            <label class="col-md-4 control-label" for="password">Password</label>
+                            <div class="col-md-8">
+                                <input id="password" name="password" type="text" placeholder="J73j2o3n3"
+                                        class="form-control input-md">
                             </div>
-                            <hr>
+                            <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
+                            <div class="col-md-8">
+                                <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
+                                        class="form-control input-md">
+                            </div>
+                        </div>
+                        <hr>
                         <!-- Email Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
@@ -99,7 +101,7 @@
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="update" form="profile" value="update">Update</button>
+                    <button type="submit" form="updateprofile" value="submit">Submit</button>
                 </div>
             </div>
         </div>
