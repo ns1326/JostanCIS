@@ -44,15 +44,16 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>Take Me Back to London (feat.Stormzy)</h1>
+                    <h1>Beautiful People (feat. Khalid)</h1>
                 </div>
-                <form action="TakeMeBackToLondon.html" method="get" id="TakeMeBackToLondon">
+                <form action="BeautifulPeople.html" method="get" id="BeautifulPeople">
                     <fieldset>
                         <!-- Performed By -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="performed">Performed By</label>
                             <div class="col-md-11">
-                                <p>Ed Sheeran, Stormzy</p>
+                                <input id="performed" name="performed" type="text" placeholder="Ed Sheeran, Khalid"
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>
@@ -60,7 +61,9 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="written">Written By</label>
                             <div class="col-md-11">
-                                <p>Ed Sheeran, Fred Gibson, Max Martin, Michael Omari, Shellback</p>
+                                <input id="written" name="written" type="text" 
+                                    placeholder="Ed Sheeran, FRED, Khalid Robinson, Max Martin, Shellback"
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>
@@ -68,7 +71,9 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="produced">Produced By</label>
                             <div class="col-md-11">
-                                <p>FRED, Kenny Beats, Skrillex</p>
+                                <input id="produced" name="produced" type="text" 
+                                    placeholder="Ed Sheeran, Fred Gibson, Max Martin, Shellback" 
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>
@@ -76,7 +81,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="added">Recently Added By</label>
                             <div class="col-md-11">
-                                <p>User at 10/2/2019</p>
+                                <input id="produced" name="produced" type="text" placeholder="User at 10/2/2019" 
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>                        
@@ -84,14 +90,14 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Review</label>
                             <div class="col-md-11">
-                                <p>This song is on FIRE!!!</p>
+                                <textarea class="form-control" id="review" rows="4" placeholder="This song is on FIRE!!!"></textarea>
                             </div>  
                         </div>
                         <hr>
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="update" form="TakeMeBackToLondon" value="update">Update</button>
+                    <button type="submit" form="BeautifulPeople" value="submit">Submit</button>
                 </div>
             </div>
         </div>
