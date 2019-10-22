@@ -67,7 +67,7 @@
 }
 .album-link-unstyled:hover {
   font-style: inherit;
-  color: rgb(80, 59, 138);
+  color: #1a8cff;
   background-color: transparent;
   font-size: inherit;
   text-decoration: none;
@@ -80,4 +80,7 @@
 .primarycategory {
   color: burlywood;
   font-size: x-large;
+}
+.underlined {
+  text-decoration: underline;
 }
