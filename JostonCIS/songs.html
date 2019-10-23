@@ -55,7 +55,8 @@
                     <h1>My Songs</h1>
                 </div>
                 <!--Table-->
-                <form action="addsong.html" method="get" id="songs">
+                <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs">
+                <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
                     <table class="table table-dark">
                         <thead>
                             <tr>
@@ -88,7 +89,12 @@
                     </table>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="add" form="songs" value="add">Add Songs</button>
+                    <div class="mb-3">
+                        <button type="add" form="songs" value="add">Add Songs</button>
+                    </div>
+                    <div class="ml-3 mb-3">
+                        <button type="edit" form="deletesongs" value="edit">Edit</button>
+                    </div>
                 </div>
             </div>
         </div>
