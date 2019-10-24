@@ -29,7 +29,7 @@
                     <p><a class="link-unstyled" href="../profile.html">Account Overview</a></p>
                 </div>
                 <hr>
-                <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
+                <div class="row ml-3 mt-2">
                     <p><a class="link-unstyled" href="album.html">My Albums</a></p>
                 </div>
                 <hr>
@@ -41,7 +41,7 @@
                     <p><a class="link-unstyled" href="../songs.html">My Songs</a></p>
                 </div>
                 <hr>
-                <div class="row ml-3 mt-2">
+                <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
                     <p><a class="link-unstyled" href="../playlists.html">My Playlists</a></p>
                 </div>
                 <hr>
@@ -52,9 +52,9 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>Add PLaylist</h1>
+                    <h1>Add Playlist</h1>
                 </div>
-                <form action="PlaylistView.html" method="get" id="addalbumforplaylist">
+                <form action="../playlists.html" method="get" id="newplaylist">
                     <fieldset>
                         <!-- Title -->
                         <div class="form-group">
@@ -65,27 +65,19 @@
                             </div>
                         </div>
                         <hr>
-                        <!-- Album -->
+                        <!-- Size Limit -->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="album">Album</label>
+                            <label class="col-md-4 control-label" for="size">Size Limit</label>
                             <div class="col-md-10">
-                                <input id="album" name="album" type="text" placeholder="Album of the song"
+                                <input id="size" name="size" type="text" placeholder="Size Limit"
                                        class="form-control input-md">
                             </div>
                         </div>
-                        <hr>
-                        <!-- Artist -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="artist">Artist</label>
-                            <div class="col-md-10">
-                                <input id="artist" name="artist" type="text" placeholder="Artist"
-                                       class="form-control input-md">
-                            </div>
-                        </div>
+                        <hr>                        
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="text" form="addsongforalbum" value="add">Add</button>
+                    <button type="text" form="newplaylist" value="add">Add</button>
                 </div>
             </div>
         </div>

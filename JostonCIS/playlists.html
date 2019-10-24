@@ -54,20 +54,22 @@
                 <div class="row mt-4 ml-3">
                     <h1>Playlists</h1>
                 </div>
-                <div class="row mt-4 ml-3">
-                    <h2><a class="album-link-unstyled" href="PlaylistView/PlaylistView.html">Bangers</a></h2>
-                </div>
-                <hr>
-                <div class="row mt-4 ml-3">
-                    <h2>In My Feelings</h2>
-                </div>
-                <hr>
-                <div class="row mt-4 ml-3">
-                    <h2>Worship</h2>
-                </div>
-                <hr>
+                <form action="PlaylistView/CreatePlaylist.html" method="get" id="createplaylist">
+                    <div class="row mt-4 ml-3">
+                        <h2><a class="album-link-unstyled" href="PlaylistView/PlaylistView.html">Bangers</a></h2>
+                    </div>
+                    <hr>
+                    <div class="row mt-4 ml-3">
+                        <h2>In My Feelings</h2>
+                    </div>
+                    <hr>
+                    <div class="row mt-4 ml-3">
+                        <h2>Worship</h2>
+                    </div>
+                    <hr>
+                </form>
                 <div class="row ml-2 mb-3">
-                    <button type="add" form="addalbumforplaylist" value="Create New">Create New</button>
+                    <button type="create" form="createplaylist" value="create">Create New</button>
                 </div>
             </div>
         </div>
