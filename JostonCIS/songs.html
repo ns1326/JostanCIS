@@ -20,15 +20,15 @@
             <div class="col-4 bg-secondary text-white">
                 <div class="row">
                     <img src="images/placeholder-face-big.png"
-                        class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
-                        alt="Profile Image Holder">
+                         class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
+                         alt="Profile Image Holder">
                     <p class="col-12 font-weight-bolder center">Username</p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
                     <p><a class="link-unstyled" href="profile.html">Account Overview</a></p>
                 </div>
-                <hr>                
+                <hr>
                 <div class="row ml-3 mt-2">
                     <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
                 </div>
@@ -56,35 +56,66 @@
                 </div>
                 <!--Table-->
                 <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs">
-                <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
+                    <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
                     <table class="table table-dark">
                         <thead>
-                            <tr>
+                        <tr>
                             <th scope="col">#</th>
                             <th scope="col">Title</th>
                             <th scope="col">Album</th>
                             <th scope="col">Artist</th>
-                            </tr>
+                            <th scope="col">Add to Playlist</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                        <tr>
                             <th scope="row">1</th>
-                            <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">Beautiful People (feat. Khalid)</a></td>
-                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">Beautiful People (feat.
+                                Khalid)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration
+                                Project</a></td>
                             <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                            </tr>
-                            <tr>
+                            <td>
+                                <select name="Add to Playlist" style="width: 100px">
+                                    <option value="default">Add to Playlist</option>
+                                    <option value="saab">Bangers</option>
+                                    <option value="mercedes">In My Feelings</option>
+                                    <option value="audi">Worship</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
                             <th scope="row">2</th>
-                            <td><a class="songs-link-unstyled" href="title/IDon'tCare.html">I Don't Care (with Justin Bieber)</a></td>
-                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="title/IDon'tCare.html">I Don't Care (with Justin
+                                Bieber)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration
+                                Project</a></td>
                             <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                            </tr>
-                            <tr>
+                            <td>
+                                <select name="Add to Playlist" style="width: 100px">
+                                    <option value="default">Add to Playlist</option>
+                                    <option value="saab">Bangers</option>
+                                    <option value="mercedes">In My Feelings</option>
+                                    <option value="audi">Worship</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
                             <th scope="row">3</th>
-                            <td><a class="songs-link-unstyled" href="title/TakeMeBackToLondon.html">Take Me Back to London (feat. Stormzy)</a></td>
-                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration Project</a></td>
+                            <td><a class="songs-link-unstyled" href="title/TakeMeBackToLondon.html">Take Me Back to
+                                London (feat. Stormzy)</a></td>
+                            <td><a class="songs-link-unstyled" href="album/viewalbum.html">No.6 Collaboration
+                                Project</a></td>
                             <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">Ed Sheeran</a></td>
-                            </tr>
+                            <td>
+                                <select name="Add to Playlist" style="width: 100px">
+                                    <option value="default">Add to Playlist</option>
+                                    <option value="saab">Bangers</option>
+                                    <option value="mercedes">In My Feelings</option>
+                                    <option value="audi">Worship</option>
+                                </select>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </form>
@@ -94,6 +125,11 @@
                     </div>
                     <div class="ml-3 mb-3">
                         <button type="edit" form="deletesongs" value="edit">Edit</button>
+                    </div>
+                    <div class="ml-3 mb-3">
+                    <form method="get" action="songs.html">
+                        <button type="submit">Update Playlists</button>
+                    </form>
                     </div>
                 </div>
             </div>
