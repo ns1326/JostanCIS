@@ -1,5 +1,5 @@
 --
--- Music DB Data v3
+-- teamjoston.db
 --
 INSERT INTO Genre (Genre_Name) VALUES ("Folk Rock");
 SET @genre = last_insert_id();
