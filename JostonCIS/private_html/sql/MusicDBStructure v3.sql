@@ -5,22 +5,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema TeamJoston_DB
+-- Schema teamjoston_db
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `TeamJoston_DB`;
-CREATE SCHEMA IF NOT EXISTS `TeamJoston_DB` DEFAULT CHARACTER SET latin1 ;
-USE `TeamJoston_DB` ;
+DROP SCHEMA IF EXISTS `teamjoston_db`;
+CREATE SCHEMA IF NOT EXISTS `teamjoston_db` DEFAULT CHARACTER SET latin1 ;
+USE `teamjoston_db` ;
 
 -- -----------------------------------------------------
--- Schema TeamJoston_DB
+-- Schema teamjoston_db
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `TeamJoston_DB` DEFAULT CHARACTER SET latin1 ;
-USE `TeamJoston_DB` ;
+CREATE SCHEMA IF NOT EXISTS `teamjoston_db` DEFAULT CHARACTER SET latin1 ;
+USE `teamjoston_db` ;
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Genre`
+-- Table `teamjoston_db`.`Genre`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Genre` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Genre` (
   `Genre_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Genre_Name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`Genre_ID`),
@@ -31,9 +31,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Album`
+-- Table `teamjoston_db`.`Album`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Album` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Album` (
   `Album_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Album_Name` VARCHAR(200) NOT NULL,
   `Image_URL` VARCHAR(200) NULL,
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Album` (
   INDEX `Genre_Album_FK` (`Genre_FK` ASC),
   CONSTRAINT `Genre_Album_FK`
     FOREIGN KEY (`Genre_FK`)
-    REFERENCES `TeamJoston_DB`.`Genre` (`Genre_ID`)
+    REFERENCES `teamjoston_db`.`Genre` (`Genre_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -52,9 +52,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`User`
+-- Table `teamjoston_db`.`User`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User` (
   `User_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Password` CHAR(40) NOT NULL,
   `Salt` VARCHAR(16) NULL,
@@ -70,9 +70,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Review`
+-- Table `teamjoston_db`.`Review`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Review` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Review` (
   `Review_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Comment` VARCHAR(200) NOT NULL,
   `Stars` TINYINT(3) UNSIGNED NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Review` (
   INDEX `User_Review_FK` (`User_FK` ASC),
   CONSTRAINT `User_Review_FK`
     FOREIGN KEY (`User_FK`)
-    REFERENCES `TeamJoston_DB`.`User` (`User_ID`)
+    REFERENCES `teamjoston_db`.`User` (`User_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -91,9 +91,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Album_Review`
+-- Table `teamjoston_db`.`Album_Review`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Album_Review` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Album_Review` (
   `Album_FK` BIGINT(20) UNSIGNED NOT NULL,
   `Review_FK` BIGINT(20) UNSIGNED NOT NULL,
   INDEX `Review_AlbumReviewFK` (`Review_FK` ASC),
@@ -101,12 +101,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Album_Review` (
   PRIMARY KEY (`Album_FK`, `Review_FK`),
   CONSTRAINT `Album_AlbumReview_FK`
     FOREIGN KEY (`Album_FK`)
-    REFERENCES `TeamJoston_DB`.`Album` (`Album_ID`)
+    REFERENCES `teamjoston_db`.`Album` (`Album_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `Review_AlbumReviewFK`
     FOREIGN KEY (`Review_FK`)
-    REFERENCES `TeamJoston_DB`.`Review` (`Review_ID`)
+    REFERENCES `teamjoston_db`.`Review` (`Review_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -114,9 +114,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Artist`
+-- Table `teamjoston_db`.`Artist`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Artist` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Artist` (
   `Artist_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Artist_Name` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`Artist_ID`),
@@ -127,9 +127,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Artist_Review`
+-- Table `teamjoston_db`.`Artist_Review`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Artist_Review` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Artist_Review` (
   `Artist_FK` BIGINT(20) UNSIGNED NOT NULL,
   `Review_FK` BIGINT(20) UNSIGNED NOT NULL,
   INDEX `Artist_ArtistReview_FK` (`Artist_FK` ASC),
@@ -137,12 +137,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Artist_Review` (
   PRIMARY KEY (`Artist_FK`, `Review_FK`),
   CONSTRAINT `Artist_ArtistReview_FK`
     FOREIGN KEY (`Artist_FK`)
-    REFERENCES `TeamJoston_DB`.`Artist` (`Artist_ID`)
+    REFERENCES `teamjoston_db`.`Artist` (`Artist_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `Review_ArtistReview_FK`
     FOREIGN KEY (`Review_FK`)
-    REFERENCES `TeamJoston_DB`.`Review` (`Review_ID`)
+    REFERENCES `teamjoston_db`.`Review` (`Review_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -150,9 +150,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Media_Type`
+-- Table `teamjoston_db`.`Media_Type`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Media_Type` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Media_Type` (
   `Media_Type_ID` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
   `Media_Type` VARCHAR(45) NOT NULL,
   `Constraint` TINYINT UNSIGNED NOT NULL COMMENT '1 = time-based, 2=filesize-based',
@@ -162,9 +162,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Playlist`
+-- Table `teamjoston_db`.`Playlist`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Playlist` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Playlist` (
   `Playlist_ID` BIGINT(20) UNSIGNED NOT NULL,
   `Playlist_Name` VARCHAR(100) NOT NULL,
   `Media_Type_FK` BIGINT UNSIGNED NULL COMMENT 'Music CD (the limit would be time), Music DVD (the limit would be time), or thumbdrive (the limit would be size)',
@@ -172,7 +172,7 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Playlist` (
   INDEX `Media_Type_Playlist_FOREIGN_idx` (`Media_Type_FK` ASC),
   CONSTRAINT `Media_Type_Playlist_FOREIGN`
     FOREIGN KEY (`Media_Type_FK`)
-    REFERENCES `TeamJoston_DB`.`Media_Type` (`Media_Type_ID`)
+    REFERENCES `teamjoston_db`.`Media_Type` (`Media_Type_ID`)
     ON DELETE SET NULL
     ON UPDATE CASCADE)
 ENGINE = InnoDB
@@ -181,9 +181,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Song`
+-- Table `teamjoston_db`.`Song`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Song` (
   `Song_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Title` VARCHAR(200) NOT NULL,
   `Length` SMALLINT(5) UNSIGNED NULL DEFAULT NULL COMMENT 'Time lenght',
@@ -196,12 +196,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song` (
   INDEX `Album_Song_FK` (`Album_FK` ASC),
   CONSTRAINT `Album_Song_FK`
     FOREIGN KEY (`Album_FK`)
-    REFERENCES `TeamJoston_DB`.`Album` (`Album_ID`)
+    REFERENCES `teamjoston_db`.`Album` (`Album_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `Artist_Song_FK`
     FOREIGN KEY (`Artist_FK`)
-    REFERENCES `TeamJoston_DB`.`Artist` (`Artist_ID`)
+    REFERENCES `teamjoston_db`.`Artist` (`Artist_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -210,9 +210,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Song_In_Playlist`
+-- Table `teamjoston_db`.`Song_In_Playlist`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song_In_Playlist` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Song_In_Playlist` (
   `Song_In_Playlist_ID` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Playlist_FK` BIGINT(20) UNSIGNED NOT NULL,
   `Song_FK` BIGINT(20) UNSIGNED NOT NULL,
@@ -222,12 +222,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song_In_Playlist` (
   INDEX `Playlist_SongInPlaylist_FK` (`Playlist_FK` ASC),
   CONSTRAINT `Playlist_SongInPlaylist_FK`
     FOREIGN KEY (`Playlist_FK`)
-    REFERENCES `TeamJoston_DB`.`Playlist` (`Playlist_ID`)
+    REFERENCES `teamjoston_db`.`Playlist` (`Playlist_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `Song_SongInPlaylist_FK`
     FOREIGN KEY (`Song_FK`)
-    REFERENCES `TeamJoston_DB`.`Song` (`Song_ID`)
+    REFERENCES `teamjoston_db`.`Song` (`Song_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -236,9 +236,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`Song_Review`
+-- Table `teamjoston_db`.`Song_Review`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song_Review` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`Song_Review` (
   `Song_FK` BIGINT(20) UNSIGNED NOT NULL,
   `Review_FK` BIGINT(20) UNSIGNED NOT NULL,
   INDEX `Song_SongReview_FK` (`Song_FK` ASC),
@@ -246,12 +246,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`Song_Review` (
   PRIMARY KEY (`Song_FK`, `Review_FK`),
   CONSTRAINT `Review_SongReview_FK`
     FOREIGN KEY (`Review_FK`)
-    REFERENCES `TeamJoston_DB`.`Review` (`Review_ID`)
+    REFERENCES `teamjoston_db`.`Review` (`Review_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `Song_SongReview_FK`
     FOREIGN KEY (`Song_FK`)
-    REFERENCES `TeamJoston_DB`.`Song` (`Song_ID`)
+    REFERENCES `teamjoston_db`.`Song` (`Song_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -260,9 +260,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`User_Playlist`
+-- Table `teamjoston_db`.`User_Playlist`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Playlist` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User_Playlist` (
   `User_FK` BIGINT(20) UNSIGNED NOT NULL,
   `Playlist_FK` BIGINT(20) UNSIGNED NOT NULL,
   INDEX `User_UserPlaylist_FK` (`User_FK` ASC),
@@ -270,12 +270,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Playlist` (
   PRIMARY KEY (`User_FK`, `Playlist_FK`),
   CONSTRAINT `Playlist_UserPlaylist_FK`
     FOREIGN KEY (`Playlist_FK`)
-    REFERENCES `TeamJoston_DB`.`Playlist` (`Playlist_ID`)
+    REFERENCES `teamjoston_db`.`Playlist` (`Playlist_ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `User_UserPlaylist_FK`
     FOREIGN KEY (`User_FK`)
-    REFERENCES `TeamJoston_DB`.`User` (`User_ID`)
+    REFERENCES `teamjoston_db`.`User` (`User_ID`)
     ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
@@ -284,9 +284,9 @@ DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`User_Song`
+-- Table `teamjoston_db`.`User_Song`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Song` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User_Song` (
   `User_FK` BIGINT UNSIGNED NOT NULL,
   `Song_FK` BIGINT UNSIGNED NOT NULL,
   `Date_Added` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -294,21 +294,21 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Song` (
   INDEX `Song_User_Song_FOREIGN_idx` (`Song_FK` ASC),
   CONSTRAINT `User_User_Song_FOREIGN`
     FOREIGN KEY (`User_FK`)
-    REFERENCES `TeamJoston_DB`.`User` (`User_ID`)
+    REFERENCES `teamjoston_db`.`User` (`User_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `Song_User_Song_FOREIGN`
     FOREIGN KEY (`Song_FK`)
-    REFERENCES `TeamJoston_DB`.`Song` (`Song_ID`)
+    REFERENCES `teamjoston_db`.`Song` (`Song_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`User_Album`
+-- Table `teamjoston_db`.`User_Album`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Album` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User_Album` (
   `User_FK` BIGINT UNSIGNED NOT NULL,
   `Album_FK` BIGINT UNSIGNED NOT NULL,
   `Date_Added` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -316,21 +316,21 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Album` (
   INDEX `Album_User_Album_FOREIGN_idx` (`Album_FK` ASC),
   CONSTRAINT `User_User_Album_FOREIGN`
     FOREIGN KEY (`User_FK`)
-    REFERENCES `TeamJoston_DB`.`User` (`User_ID`)
+    REFERENCES `teamjoston_db`.`User` (`User_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `Album_User_Album_FOREIGN`
     FOREIGN KEY (`Album_FK`)
-    REFERENCES `TeamJoston_DB`.`Album` (`Album_ID`)
+    REFERENCES `teamjoston_db`.`Album` (`Album_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `TeamJoston_DB`.`User_Artist`
+-- Table `teamjoston_db`.`User_Artist`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Artist` (
+CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User_Artist` (
   `User_FK` BIGINT UNSIGNED NOT NULL,
   `Artist_FK` BIGINT UNSIGNED NOT NULL,
   `Date_Added` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -338,12 +338,12 @@ CREATE TABLE IF NOT EXISTS `TeamJoston_DB`.`User_Artist` (
   INDEX `Artist_User_Artist_FOREIGN_idx` (`Artist_FK` ASC),
   CONSTRAINT `User_User_Artist_FOREIGN`
     FOREIGN KEY (`User_FK`)
-    REFERENCES `TeamJoston_DB`.`User` (`User_ID`)
+    REFERENCES `teamjoston_db`.`User` (`User_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
   CONSTRAINT `Artist_User_Artist_FOREIGN`
     FOREIGN KEY (`Artist_FK`)
-    REFERENCES `TeamJoston_DB`.`Artist` (`Artist_ID`)
+    REFERENCES `teamjoston_db`.`Artist` (`Artist_ID`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;

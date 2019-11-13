@@ -1,22 +1,28 @@
-select * from playlist;
-select * from song_in_playlist;
-select * from song;
-select * from album;
+select * from User;
+select * from Song_In_Playlist;
+select * from Song;
+select * from Artist;
+select * from User_Artist;
 
-INSERT INTO song_in_playlist  values
-    (Default, 1, 1, 1),
-    (Default, 1, 2, 2),
-    (Default, 1, 3, 3);
+-- Create User
+Insert into User values
+	(1, "jostonchan", DEFAULT, "Joston", "Chan", "jc1608@messiah.edu", 1);
     
+Insert into User_Artist values
+	(1, 1, DEFAULT), (1, 2, DEFAULT);
 
-SELECT Song.Title , Album_Name, Artist_Name, Playlist_Name FROM Song	
-	JOIN song_in_playlist ON Song.Song_ID = song_in_playlist.Song_FK 
-    JOIN playlist ON playlist.Playlist_ID = song_in_playlist.Playlist_FK
-    JOIN user_playlist ON playlist.Playlist_ID = user_playlist.Playlist_FK
-    JOIN user ON user.User_ID = user_playlist.User_FK
-    JOIN user_album ON user.User_ID = user_album.User_FK
-    JOIN album ON album.Album_ID = user_album.Album_FK
-	JOIN user_artist ON User.User_ID = User_artist.User_FK
-	JOIN artist ON artist.Artist_ID = user_artist.Artist_FK
+select Artist_Name from Artist 
+	join User_Artist ON Artist.Artist_ID = User_Artist.Artist_FK
+    join User ON User.User_ID = User_Artist.User_FK;
+
+SELECT Song.Title, Album_Name, Artist_Name, Playlist_Name FROM Song	
+	JOIN Song_In_Playlist ON Song.Song_ID = Song_In_Playlist.Song_FK 
+    JOIN Playlist ON Playlist.Playlist_ID = Song_In_Playlist.Playlist_FK
+    JOIN User_Playlist ON Playlist.Playlist_ID = User_Playlist.Playlist_FK
+    JOIN User ON User.User_ID = User_Playlist.User_FK
+    JOIN User_Album ON User.User_ID = User_Album.User_FK
+    JOIN Album ON Album.Album_ID = User_Album.Album_FK
+	JOIN User_Artist ON User.User_ID = User_Artist.User_FK
+	JOIN Artist ON Artist.Artist_ID = User_Artist.Artist_FK
 Order BY Song.Title;
 
