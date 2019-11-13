@@ -1,0 +1,86 @@
+.center {
+  text-align: center;
+}
+.link-unstyled, .link-unstyled:visited, .link-unstyled:focus {
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
+}
+
+.link-unstyled:hover {
+  font-style: inherit;
+  color: yellow;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
+}
+.nospacing {
+  margin: 0;
+  padding: 0;
+}
+.songs-link-unstyled, .songs-link-unstyled:visited, .songs-link-unstyled:focus, 
+.album-link-unstyled, .album-link-unstyled:visited, .album-link-unstyled:focus{
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  box-shadow: inherit;
+  vertical-align: inherit;
+}
+.songs-link-unstyled:hover {
+  font-style: inherit;
+  color: #83FFF9;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  box-shadow: inherit;
+  vertical-align: inherit;
+}
+.album-link-unstyled:hover {
+  font-style: inherit;
+  color: #1a8cff;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  box-shadow: inherit;
+  vertical-align: inherit;
+}
+.primarycategory {
+  color: burlywood;
+  font-size: x-large;
+}
+.underlined {
+  text-decoration: underline;
+}
