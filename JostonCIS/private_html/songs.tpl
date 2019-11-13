@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="{$WEB_URL}css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body class="bg-primary">
@@ -19,34 +19,34 @@
         <div class="row">
             <div class="col-4 bg-secondary text-white">
                 <div class="row">
-                    <img src="{$WEB_URL}images/placeholder-face-big.png"
+                    <img src="images/placeholder-face-big.png"
                          class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
                          alt="Profile Image Holder">
                     <p class="col-12 font-weight-bolder center">Username</p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="{$WEB_URL}profile.html">Account Overview</a></p>
+                    <p><a class="link-unstyled" href="profile.html">Account Overview</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="{$WEB_URL}album/album.html">My Albums</a></p>
+                    <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="{$WEB_URL}artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="{$WEB_URL}songs.html">My Songs</a></p>
+                    <p><a class="link-unstyled" href="songs.php">My Songs</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="{$WEB_URL}playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="playlists.html">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="{$WEB_URL}login.html">Log Out</a></p>
+                    <p><a class="link-unstyled" href="login.html">Log Out</a></p>
                 </div>
                 <hr>
             </div>
@@ -107,7 +107,7 @@
                         <button type="edit" form="deletesongs" value="edit">Edit</button>
                     </div>
                     <div class="ml-3 mb-3">
-                    <form method="get" action="songs.html">
+                    <form method="get" action="songs.php">
                         <button type="submit">Update Playlists</button>
                     </form>
                     </div>
