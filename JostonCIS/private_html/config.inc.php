@@ -17,14 +17,11 @@ unset($tmp[count($tmp)-1]);
 define('BASE_PATH', implode(DIRECTORY_SEPARATOR, $tmp) . DIRECTORY_SEPARATOR);
 define('PUBLIC_HTML', BASE_PATH . 'public_html/');
 define('PRIVATE_HTML', BASE_PATH . 'private_html/');
-define('WEB_URL', "http://localhost/teamjoston.cs.messiah.edu/"); //add teamjoston.cs.messiah.edu at the end?
-#
-# Set PHP configuration options
-define('CLASS_ROOT', BASE_PATH . 'public_html/class/');
+define('WEB_URL', "http://teamjoston.cs.messiah.edu/"); //for big applications only
 #
 # Set Smarty constants
-define('SMARTY_ROOT', PUBLIC_HTML . 'lib/Smarty-3.1.33/');
-define('SMARTY_TEMPLATES', PUBLIC_HTML . 'templates/');
+define('SMARTY_ROOT', PRIVATE_HTML . 'lib/smarty-3.1.33/');
+define('SMARTY_TEMPLATES', PRIVATE_HTML . 'templates/');
 define('SMARTY', SMARTY_ROOT . 'libs/Smarty.class.php/');
 
 /*

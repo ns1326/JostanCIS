@@ -76,10 +76,10 @@
                             {foreach $song as $songs_id}
                                 $i = 1
                                     <tr>
-                                        <th scope="row">i</th>
-                                        <td><a class="songs-link-unstyled" href="{$WEB_URL}title/BeautifulPeople.html">{$songs_id.Title}</a></td>
-                                        <td><a class="songs-link-unstyled" href="{$WEB_URL}album/viewalbum.html">{$songs_id.Album_Name}</a></td>
-                                        <td><a class="songs-link-unstyled" href="{$WEB_URL}artist/EdSheeran.html">{$songs_id.Artist_Name}</a></td>
+                                        <th scope="row">$i</th>
+                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">{$songs_id.Title}</a></td>
+                                        <td><a class="songs-link-unstyled" href="album/viewalbum.html">{$songs_id.Album_Name}</a></td>
+                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">{$songs_id.Artist_Name}</a></td>
                                         <td>
                                             <select name="Add to Playlist" style="width: 100px">
                                                 <option value="default">Add to Playlist</option>
@@ -94,7 +94,7 @@
                                         </td>
                                     </tr>     
                                 $i += 1  
-                                {/foreach}                 
+                            {/foreach}                 
                             </tbody>
                         </table>
                     </form>

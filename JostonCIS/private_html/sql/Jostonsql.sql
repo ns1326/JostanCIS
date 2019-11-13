@@ -1,17 +1,10 @@
 select * from User;
 select * from Song_In_Playlist;
 select * from Song;
-select * from Artist;
-select * from User_Artist;
+select * from Playlist;
+select * from User_Playlist;
 
--- Create User
-Insert into User values
-	(1, "jostonchan", DEFAULT, "Joston", "Chan", "jc1608@messiah.edu", 1);
-    
-Insert into User_Artist values
-	(1, 1, DEFAULT), (1, 2, DEFAULT);
-
-select Artist_Name from Artist 
+select User_ID, Artist_Name from Artist 
 	join User_Artist ON Artist.Artist_ID = User_Artist.Artist_FK
     join User ON User.User_ID = User_Artist.User_FK;
 

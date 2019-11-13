@@ -5,9 +5,9 @@
    ------------------------------------------------------------------------------- */
 /* Set database constants and connect to the database.
  */
-define('DB_USER', 'jc1608');
+define('DB_USER', '1');
 define('DB_PASSWORD', 'jostonchan');
-define('DB_NAME', 'teamjoston_db');
+define('DB_NAME', 'teamjoston.db');
 
 $db_name = DB_NAME;
 $username = DB_USER;
