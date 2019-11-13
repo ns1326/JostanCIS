@@ -20,8 +20,8 @@ define('PRIVATE_HTML', BASE_PATH . 'private_html/');
 define('WEB_URL', "http://teamjoston.cs.messiah.edu/"); //for big applications only
 #
 # Set Smarty constants
-define('SMARTY_ROOT', PRIVATE_HTML . 'lib/smarty/');
-define('SMARTY_TEMPLATES', PRIVATE_HTML . 'templates/');
+define('SMARTY_ROOT', PUBLIC_HTML . 'lib/smarty/');
+define('SMARTY_TEMPLATES', PUBLIC_HTML . 'templates/');
 define('SMARTY', SMARTY_ROOT . 'libs/Smarty.class.php');
 
 /*

@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-13 15:28:50
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\songs.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dcc6782f3d997_01144167',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ece5647e8cdd2c6b0777b32d818e093a5583e8b0' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\songs.tpl',
+      1 => 1573676533,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dcc6782f3d997_01144167 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -55,12 +78,13 @@
                     <h1>My Songs</h1>
                 </div>
                 <!--Table-->
-                {if $nosongs}
+                <?php if ($_smarty_tpl->tpl_vars['nosongs']->value) {?>
                     <div class="col-8 bg-light nospacing">
                         There are no songs available.
                     </div>
-                {else}
-                    <form action="{$WEB_URL}songs/deletesongsfromsongs.html" method="get" id="deletesongs">
+                <?php } else { ?>
+                    <form action="<?php echo $_smarty_tpl->tpl_vars['WEB_URL']->value;?>
+songs/deletesongsfromsongs.html" method="get" id="deletesongs">
                         <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
                         <table class="table table-dark">
                             <thead>
@@ -73,32 +97,52 @@
                             </tr>
                             </thead>
                             <tbody>
-                            {$i = 1}
-                            {foreach $songs as $songs_id}                                
+                            <?php $_smarty_tpl->_assignInScope('i', 1);?>
+                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['songs']->value, 'songs_id');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['songs_id']->value) {
+?>                                
                                     <tr>
-                                        <th scope="row">{$i}</th>
-                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">{$songs_id.Title}</a></td>
-                                        <td><a class="songs-link-unstyled" href="album/viewalbum.html">{$songs_id.Album_Name}</a></td>
-                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">{$songs_id.Artist_Name}</a></td>
+                                        <th scope="row"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</th>
+                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
+</a></td>
+                                        <td><a class="songs-link-unstyled" href="album/viewalbum.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Album_Name'];?>
+</a></td>
+                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Artist_Name'];?>
+</a></td>
                                         <td>
                                             <select name="Add to Playlist" style="width: 100px">
                                                 <option value="default">Add to Playlist</option>
-                                                {if $songs_id.Playlist_Name === false}
+                                                <?php if ($_smarty_tpl->tpl_vars['songs_id']->value['Playlist_Name'] === false) {?>
                                                     <option value="none">No Playlist</option>
-                                                {else}
-                                                    {foreach $songs_id.Playlist_Name as $playlist_name}                                                    
-                                                        <option value="{$playlist_name}">{$playlist_name}}</option>
-                                                    {/foreach}
-                                                {/if}
+                                                <?php } else { ?>
+                                                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['songs_id']->value['Playlist_Name'], 'playlist_name');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['playlist_name']->value) {
+?>                                                    
+                                                        <option value="<?php echo $_smarty_tpl->tpl_vars['playlist_name']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['playlist_name']->value;?>
+}</option>
+                                                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                                <?php }?>
                                             </select>
                                         </td>
                                     </tr>     
-                                {$i = $i + 1}
-                            {/foreach}                 
+                                <?php $_smarty_tpl->_assignInScope('i', $_smarty_tpl->tpl_vars['i']->value+1);?>
+                            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>                 
                             </tbody>
                         </table>
                     </form>
-                {/if}
+                <?php }?>
                 <div class="row ml-3 mb-3">
                     <div class="mb-3">
                         <button type="add" form="songs" value="add">Add Songs</button>
@@ -116,4 +160,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}
