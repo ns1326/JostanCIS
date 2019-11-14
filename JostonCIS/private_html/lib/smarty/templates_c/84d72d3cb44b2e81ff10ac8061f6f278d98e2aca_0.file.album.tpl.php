@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 19:09:47
+/* Smarty version 3.1.33, created on 2019-11-13 19:56:56
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcc9b4b2fe223_73831793',
+  'unifunc' => 'content_5dcca6584fb195_46398229',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '84d72d3cb44b2e81ff10ac8061f6f278d98e2aca' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\album.tpl',
-      1 => 1573690167,
+      1 => 1573693014,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcc9b4b2fe223_73831793 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcca6584fb195_46398229 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,7 +65,7 @@ function content_5dcc9b4b2fe223_73831793 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="../playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -78,8 +78,8 @@ function content_5dcc9b4b2fe223_73831793 (Smarty_Internal_Template $_smarty_tpl)
                     <h1>My Albums</h1>
                 </div>
                 <br>
-                <?php if ($_smarty_tpl->tpl_vars['nosongs']->value) {?>
-                    <div class="col-8 bg-light nospacing">
+                <?php if ($_smarty_tpl->tpl_vars['noalbums']->value) {?>
+                    <div class="col-8 bg-light nospacing ml-3">
                         There are no albums.
                     </div>
                 <?php } else { ?>
@@ -92,12 +92,13 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['albums_id']->value) {
 ?>                             
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="<?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
-}"><a class="album-link-unstyled"                                 
-                                        href="viewalbum.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
+                                    <label class="col-md-8 control-label" for="<?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
+}">
+                                    <a class="album-link-unstyled" href="viewalbum.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
 </a></label>
                                     <div class="col-md-8">
-                                        <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Artist_Name'];?>
+                                        <p><b><a class="album-link-unstyled" 
+                                        href="../artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Artist_Name'];?>
 </a></b></p>
                                     </div>
                                 </div>

@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-13 19:36:11
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\playlists.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dcca17bd10cc1_04458684',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '9abb0dadbb11a83cb6f8521a834830a0637bc2e5' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\playlists.tpl',
+      1 => 1573691724,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dcca17bd10cc1_04458684 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +65,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -54,20 +77,29 @@
                 <div class="row mt-4 ml-3">
                     <h1>Playlists</h1>
                 </div>
-                <form action="PlaylistView/CreatePlaylist.html" method="get" id="createplaylist">
-                    <div class="row mt-4 ml-3">
-                        <h2><a class="album-link-unstyled" href="PlaylistView/PlaylistView.html">Bangers</a></h2>
+                <?php if ($_smarty_tpl->tpl_vars['noplaylists']->value) {?>
+                    <div class="col-8 bg-light nospacing">
+                        There are no playlists.
                     </div>
-                    <hr>
-                    <div class="row mt-4 ml-3">
-                        <h2>In My Feelings</h2>
-                    </div>
-                    <hr>
-                    <div class="row mt-4 ml-3">
-                        <h2>Worship</h2>
-                    </div>
-                    <hr>
-                </form>
+                <?php } else { ?>
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['playlists']->value, 'playlists_id');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['playlists_id']->value) {
+?>
+                        <form action="PlaylistView/CreatePlaylist.html" method="get" id="createplaylist">
+                            <div class="row mt-4 ml-3">
+                                <h2><a class="album-link-unstyled" 
+                                href="PlaylistView/PlaylistView.html"><?php echo $_smarty_tpl->tpl_vars['playlists_id']->value['Playlist_Name'];?>
+</a></h2>
+                            </div>
+                            <hr>
+                        </form>
+                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                <?php }?>
                 <div class="row ml-2 mb-3">
                     <button type="create" form="createplaylist" value="create">Create New</button>
                 </div>
@@ -75,4 +107,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}

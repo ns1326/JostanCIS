@@ -42,7 +42,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -56,7 +56,7 @@
                 </div>
                 <!--Table-->
                 {if $nosongs}
-                    <div class="col-8 bg-light nospacing">
+                    <div class="col-8 bg-light nospacing ml-3">
                         There are no songs.
                     </div>
                 {else}
@@ -72,11 +72,10 @@
                                 <th scope="col">Add to Playlist</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            {$i = 1}
+                            <tbody>                            
                             {foreach $songs as $songs_id}                                
                                     <tr>
-                                        <th scope="row">{$i}</th>
+                                        <th scope="row">{$songs_id.SongID}</th>
                                         <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">{$songs_id.Title}</a></td>
                                         <td><a class="songs-link-unstyled" href="album/viewalbum.html">{$songs_id.Album_Name}</a></td>
                                         <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">{$songs_id.Artist_Name}</a></td>
@@ -92,8 +91,7 @@
                                                 {/if}
                                             </select>
                                         </td>
-                                    </tr>     
-                                {$i = $i + 1}
+                                    </tr>                                    
                             {/foreach}                 
                             </tbody>
                         </table>

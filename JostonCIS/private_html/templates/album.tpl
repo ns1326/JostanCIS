@@ -42,7 +42,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="../playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -55,8 +55,8 @@
                     <h1>My Albums</h1>
                 </div>
                 <br>
-                {if $nosongs}
-                    <div class="col-8 bg-light nospacing">
+                {if $noalbums}
+                    <div class="col-8 bg-light nospacing ml-3">
                         There are no albums.
                     </div>
                 {else}
@@ -65,10 +65,11 @@
                             <!-- Album Name-->
                             {foreach $albums as $albums_id}                             
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="{$albums_id.Album_Name}}"><a class="album-link-unstyled"                                 
-                                        href="viewalbum.html">{$albums_id.Album_Name}</a></label>
+                                    <label class="col-md-8 control-label" for="{$albums_id.Album_Name}}">
+                                    <a class="album-link-unstyled" href="viewalbum.html">{$albums_id.Album_Name}</a></label>
                                     <div class="col-md-8">
-                                        <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">{$albums_id.Artist_Name}</a></b></p>
+                                        <p><b><a class="album-link-unstyled" 
+                                        href="../artist/EdSheeran.html">{$albums_id.Artist_Name}</a></b></p>
                                     </div>
                                 </div>
                                 <hr>

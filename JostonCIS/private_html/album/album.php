@@ -2,12 +2,10 @@
 require_once "../config.inc.php";
 require_once "../dbconfig.inc.php";
 
-$sql = "SELECT Album_Name, Artist_Name FROM Album
-            JOIN User_Album ON Album.Album_ID = User_Album.Album_FK
-            JOIN User ON User.User_ID = User_Album.User_FK
-            JOIN User_Artist ON User.User_ID = User_Artist.User_FK
-            JOIN Artist ON Artist.Artist_ID = User_Artist.Artist_FK
-        Order By Album_Name";
+$sql = "SELECT DISTINCT Album_Name, Artist_Name FROM Album
+            JOIN Song ON Album.Album_ID = Song.Album_FK
+            JOIN Artist ON Artist.Artist_ID = Song.Artist_FK
+        Order By Album_Name;";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
