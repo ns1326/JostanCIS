@@ -20,8 +20,8 @@
             <div class="col-4 bg-secondary text-white">
                 <div class="row">
                     <img src="Images/placeholder-face-big.png"
-                        class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
-                        alt="Profile Image Holder">
+                         class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
+                         alt="Profile Image Holder">
                     <p class="col-12 font-weight-bolder center">Username</p>
                 </div>
                 <hr>
@@ -54,14 +54,14 @@
                 <div class="row mt-4 ml-3">
                     <h1>Edit Profile</h1>
                 </div>
-                <form action="profile.html" method="get" id="updateprofile">
+                <form action="profile.php" method="post" id="updateprofile">
                     <fieldset>
                         <!-- Username Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
-                                <input id="username" name="username" type="text" placeholder="PandaBearPro"
-                                       class="form-control input-md">
+                                <input id="username" name="username" type="text" value="PandaBearPro"
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -69,20 +69,20 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
-                                <input id="password" name="password" type="text" placeholder="J73j2o3n3"
-                                        class="form-control input-md">
+                                <input id="password" name="password" type="password" value="J73j2o3n3"
+                                       class="form-control input-md">
                             </div>
-                            <br> 
+                            <br>
                             <label class="col-md-4 control-label" for="newpassword">New Password</label>
                             <div class="col-md-8">
                                 <input id="newpassword" name="newpassword" type="text" placeholder=""
-                                        class="form-control input-md">
+                                       class="form-control input-md">
                             </div>
-        <!--Line Break-->   <br> 
+                            <!--Line Break-->   <br>
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
                                 <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
-                                        class="form-control input-md">
+                                       class="form-control input-md">
                             </div>
                         </div>
                         <hr>
@@ -90,8 +90,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="pandabearproduction2@gmail.com"
-                                       class="form-control input-md">
+                                <input id="email" name="email" type="text" value="pandabearproduction2@gmail.com"
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -99,8 +99,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="1/24/1999"
-                                       class="form-control input-md">
+                                <input id="dob" name="dob" type="text" value="1/24/1999"
+                                       class="form-control input-md" required>
                                 <span class="help-block">mm/dd/year</span>
                             </div>
                         </div>
@@ -109,8 +109,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="US"
-                                       class="form-control input-md">
+                                <input id="country" name="country" type="text" value="US"
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>

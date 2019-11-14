@@ -21,8 +21,8 @@
             <div class="col-4 bg-secondary text-white">
                 <div class="row">
                     <img src="images/placeholder-face-big.png"
-                        class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
-                        alt="Profile Image Holder">
+                         class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
+                         alt="Profile Image Holder">
                     <p class="col-12 font-weight-bolder center">Username</p>
                 </div>
                 <hr>
@@ -64,23 +64,23 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username:</label>
                             <div class="col-md-8">
-                                <p>PandaBearPro</p>
+                                <p><?php echo $_POST["username"] ?></p>
                             </div>
                         </div>
                         <hr>
                         <!-- Password-->
                         <div class="form-group">
-                                <label class="col-md-4 control-label" for="password">Password:</label>
-                                <div class="col-md-8">
-                                    <p>J73j2o3n3</p>
-                                </div>
+                            <label class="col-md-4 control-label" for="password">Password:</label>
+                            <div class="col-md-8">
+                                <p>J73j2o3n3</p>
                             </div>
-                            <hr>
+                        </div>
+                        <hr>
                         <!-- Email-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email:</label>
                             <div class="col-md-8">
-                                <p>pandabearproduction2@gmail.com</p>
+                                <p><?php echo $_POST["email"] ?></p>
                             </div>
                         </div>
                         <hr>
@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth:</label>
                             <div class="col-md-8">
-                                <p>1/24/1999 (mm/dd/year)</p>
+                                <p><?php echo $_POST["dob"] ?> (mm/dd/year)</p>
                             </div>
                         </div>
                         <hr>
@@ -96,7 +96,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country:</label>
                             <div class="col-md-6">
-                                <p>US</p>
+                                <p><?php echo $_POST["country"] ?></p>
                             </div>
                         </div>
                         <hr>
