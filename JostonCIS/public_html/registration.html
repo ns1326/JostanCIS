@@ -14,7 +14,7 @@
 <div class="container">
     <div class="col">
         <div class="row align-center">
-            <img src="https://via.placeholder.com/2000x150?text=Welcome+to+Music+Now" class="img-fluid">
+            <img src="https://via.placeholder.com/2000x150?text=Welcome+to+Music+Now" class="img-fluid" alt="placeholder">
         </div>
         <div class="row">
             <div class="col-4 bg-secondary text-white">
@@ -35,14 +35,14 @@
                 <div class="row mt-4 ml-3">
                     <h2>Profile Details</h2>
                 </div>
-                <form action="login.html" method="get" id="registration">
+                <form action="registration.php" method="post" id="registration">
                     <fieldset>
                         <!-- First Name Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
                                 <input id="firstname" name="firstname" type="text" placeholder="First Name"
-                                       class="form-control input-md">
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -51,7 +51,7 @@
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
                                 <input id="lastname" name="lastname" type="text" placeholder="Last Name"
-                                       class="form-control input-md">
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -78,7 +78,7 @@
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="E-mail"
-                                       class="form-control input-md">
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -87,7 +87,7 @@
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
                                 <input id="dob" name="dob" type="text" placeholder="mm/dd/year"
-                                       class="form-control input-md">
+                                       class="form-control input-md" typeof="date" required>
                             </div>
                         </div>
                         <hr>
@@ -108,5 +108,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
