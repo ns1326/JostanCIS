@@ -60,8 +60,8 @@
                         There are no songs.
                     </div>
                 {else}
-                    <form action="{$WEB_URL}songs/deletesongsfromsongs.html" method="get" id="deletesongs">
-                        <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
+                    <!-- <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs"> -->
+                    <form action="songs/addsong.html" method="get" id="songs">
                         <table class="table table-dark">
                             <thead>
                             <tr>

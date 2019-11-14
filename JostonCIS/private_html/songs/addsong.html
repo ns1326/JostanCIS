@@ -54,7 +54,7 @@
                 <div class="row mt-4 ml-3">
                     <h1>Add song</h1>
                 </div>
-                <form action="../songs.html" method="get" id="addsong">
+                <form action="../songs.php" method="get" id="addsong">
                     <fieldset>
                         <!-- Title -->
                         <div class="form-group">
@@ -123,11 +123,27 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Write a Review</label>
                             <div class="col-md-10">
-                                <textarea class="form-control" id="review" rows="4" placeholder="Type positive thoughts dudes"></textarea>
+                                <textarea class="form-control" id="review" rows="4" placeholder="Type positive thoughts dudes."></textarea>
                             </div>  
                         </div>
                         <hr>
+                        <!-- Font Awesome Icon Library -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                        <style>
+                            .checked {
+                                color: orange;
+                            }
+                        </style>
+                        </head>
+
+                        <h2>Star Rating</h2>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                     </fieldset>
+                    <hr>
                 </form>
                 <div class="row ml-3 mb-3">
                     <button type="addsong" form="addsong" value="addsong">Add</button>

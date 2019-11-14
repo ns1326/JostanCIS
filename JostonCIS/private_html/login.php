@@ -1,7 +1,7 @@
 <?php
-session_start();
-?>
-<?php
+    require_once "config.inc.php";
+    require_once "dbconfig.inc.php";
+
 $_SESSION["passwordStored"] = "hello";
 // define variables and initialize with empty values
 $username = $password = "";

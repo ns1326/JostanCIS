@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 19:45:29
+/* Smarty version 3.1.33, created on 2019-11-13 23:59:12
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcca3a9b07353_69352334',
+  'unifunc' => 'content_5dccdf2080ec89_95006682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6513b2b94f7ed91f70a4d50a41bb98da3577ea51' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\songs.tpl',
-      1 => 1573692324,
+      1 => 1573707526,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcca3a9b07353_69352334 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccdf2080ec89_95006682 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,9 +83,8 @@ function content_5dcca3a9b07353_69352334 (Smarty_Internal_Template $_smarty_tpl)
                         There are no songs.
                     </div>
                 <?php } else { ?>
-                    <form action="<?php echo $_smarty_tpl->tpl_vars['WEB_URL']->value;?>
-songs/deletesongsfromsongs.html" method="get" id="deletesongs">
-                        <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
+                    <!-- <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs"> -->
+                    <form action="songs/addsong.html" method="get" id="songs">
                         <table class="table table-dark">
                             <thead>
                             <tr>

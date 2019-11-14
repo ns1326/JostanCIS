@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 20:01:13
+/* Smarty version 3.1.33, created on 2019-11-14 00:22:04
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcca759922495_02742320',
+  'unifunc' => 'content_5dcce47c0adf12_27101824',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcca759922495_02742320 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcce47c0adf12_27101824 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
