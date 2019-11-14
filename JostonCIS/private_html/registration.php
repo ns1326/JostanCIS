@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <script>
     let timer = setTimeout(function () {
-        window.location = 'profile.html'
+        window.location = 'login.html'
     }, 5000);
 </script>
 
