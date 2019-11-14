@@ -2,16 +2,13 @@
 require_once "config.inc.php";
 require_once "dbconfig.inc.php";
 
-$sql = "SELECT Song.Title as Title , Album_Name, Artist_Name, Playlist_Name FROM Song	           
+$sql = "SELECT Song_ID as SongID, Song.Title as Title , Album_Name, Artist_Name, Playlist_Name FROM Song	           
+            JOIN Album ON Album.Album_ID = Song.Album_FK
+            JOIN Artist ON Artist.Artist_ID = Song.Artist_FK    
             JOIN Song_In_Playlist ON Song.Song_ID = Song_In_Playlist.Song_FK 
             JOIN Playlist ON Playlist.Playlist_ID = Song_In_Playlist.Playlist_FK
-            JOIN User_Playlist ON Playlist.Playlist_ID = User_Playlist.Playlist_FK
-            JOIN User ON User.User_ID = User_Playlist.User_FK
-            JOIN User_Album ON User.User_ID = User_Album.User_FK
-            JOIN Album ON Album.Album_ID = User_Album.Album_FK
-            JOIN User_Artist ON User.User_ID = User_Artist.User_FK
-            JOIN Artist ON Artist.Artist_ID = User_Artist.Artist_FK
-        Order BY Song.Title";
+            JOIN User_Playlist ON Playlist.Playlist_ID = User_Playlist.Playlist_FK	
+        Order BY Song_ID";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
@@ -22,6 +19,7 @@ if($stmt->rowCount() == 0){
     $songs = array();
     while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         $songs[] = array(
+            "SongID" => $row['SongID'],
             "Title" => $row['Title'],
             "Album_Name" => $row['Album_Name'],
             "Artist_Name" => $row['Artist_Name'],

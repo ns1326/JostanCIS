@@ -27,5 +27,4 @@ try {
     echo 'ERROR: ' . $e->getMessage();
 }
 /* Automatically start the session.
- */
-session_start();
+ */session_start();

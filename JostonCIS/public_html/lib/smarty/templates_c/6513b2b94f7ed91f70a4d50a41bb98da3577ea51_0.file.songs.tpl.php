@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 15:22:15
+/* Smarty version 3.1.33, created on 2019-11-13 19:45:29
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcc65f7e8b4e3_11827584',
+  'unifunc' => 'content_5dcca3a9b07353_69352334',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6513b2b94f7ed91f70a4d50a41bb98da3577ea51' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\songs.tpl',
-      1 => 1573676533,
+      1 => 1573692324,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcca3a9b07353_69352334 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +53,7 @@ function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
+                    <p><a class="link-unstyled" href="album/album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -65,7 +65,7 @@ function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -79,8 +79,8 @@ function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <!--Table-->
                 <?php if ($_smarty_tpl->tpl_vars['nosongs']->value) {?>
-                    <div class="col-8 bg-light nospacing">
-                        There are no songs available.
+                    <div class="col-8 bg-light nospacing ml-3">
+                        There are no songs.
                     </div>
                 <?php } else { ?>
                     <form action="<?php echo $_smarty_tpl->tpl_vars['WEB_URL']->value;?>
@@ -96,15 +96,14 @@ songs/deletesongsfromsongs.html" method="get" id="deletesongs">
                                 <th scope="col">Add to Playlist</th>
                             </tr>
                             </thead>
-                            <tbody>
-                            <?php $_smarty_tpl->_assignInScope('i', 1);?>
+                            <tbody>                            
                             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['songs']->value, 'songs_id');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['songs_id']->value) {
 ?>                                
                                     <tr>
-                                        <th scope="row"><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+                                        <th scope="row"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['SongID'];?>
 </th>
                                         <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
 </a></td>
@@ -133,8 +132,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                                 <?php }?>
                                             </select>
                                         </td>
-                                    </tr>     
-                                <?php $_smarty_tpl->_assignInScope('i', $_smarty_tpl->tpl_vars['i']->value+1);?>
+                                    </tr>                                    
                             <?php
 }
 }

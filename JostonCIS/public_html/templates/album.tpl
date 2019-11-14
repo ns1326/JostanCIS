@@ -30,7 +30,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="album.html">My Albums</a></p>
+                    <p><a class="link-unstyled" href="album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -42,7 +42,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../playlists.html">My Playlists</a></p>
+                    <p><a class="link-unstyled" href="../playlists.php">My Playlists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -55,42 +55,28 @@
                     <h1>My Albums</h1>
                 </div>
                 <br>
-                <form action="addalbum.html" method="get" id="album">
-                    <fieldset>
-                        <!-- Album Name-->
-                        <div class="form-group" background-color="black">
-                            <label class="col-md-4 control-label" for="HeartBreakonaFullMoon">Heart Break on a Full Moon</label>
-                            <div class="col-md-8">
-                                <p><b>Chris Brown</b></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Album Two -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"                                 
-                                href="viewalbum.html">No.6 Collaboration Project</a></label>
-                            <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></b></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Album Three-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="FreeSpirit">Free Spirit</label>
-                            <div class="col-md-8">
-                                <p><b>Khalid</b></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Album Four-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="HereasinHeaven">Here as in Heaven</label>
-                            <div class="col-md-8">
-                                <p><b>Elevation Worship</b></p>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+                {if $noalbums}
+                    <div class="col-8 bg-light nospacing ml-3">
+                        There are no albums.
+                    </div>
+                {else}
+                    <form action="addalbum.html" method="get" id="album">
+                        <fieldset>
+                            <!-- Album Name-->
+                            {foreach $albums as $albums_id}                             
+                                <div class="form-group">
+                                    <label class="col-md-8 control-label" for="{$albums_id.Album_Name}}">
+                                    <a class="album-link-unstyled" href="viewalbum.html">{$albums_id.Album_Name}</a></label>
+                                    <div class="col-md-8">
+                                        <p><b><a class="album-link-unstyled" 
+                                        href="../artist/EdSheeran.html">{$albums_id.Artist_Name}</a></b></p>
+                                    </div>
+                                </div>
+                                <hr>
+                            {/foreach}
+                        </fieldset>
+                    </form>
+                {/if}
                 <div class="row ml-3 mb-3">
                     <button type="add" form="album" value="add">Add</button>
                 </div>

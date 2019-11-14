@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-13 20:01:13
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dcca759922495_02742320',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '73771fd4d364fcaf161ef59a90869e59aa0dc091' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album.tpl',
+      1 => 1573693014,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dcca759922495_02742320 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -55,36 +78,38 @@
                     <h1>My Albums</h1>
                 </div>
                 <br>
-                <form action="addalbum.html" method="get" id="album">
-                    <fieldset>
-                        <!-- Album Name-->
-                        <!-- Album One Deleted-->
-                        <!-- Album Two -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"
-                                                                                   href="viewalbum.html">No.6 Collaboration Project</a></label>
-                            <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></b></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Album Three-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="FreeSpirit">Free Spirit</label>
-                            <div class="col-md-8">
-                                <p><b>Khalid</b></p>
-                            </div>
-                        </div>
-                        <hr>
-                        <!-- Album Four-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="HereasinHeaven">Here as in Heaven</label>
-                            <div class="col-md-8">
-                                <p><b>Elevation Worship</b></p>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+                <?php if ($_smarty_tpl->tpl_vars['noalbums']->value) {?>
+                    <div class="col-8 bg-light nospacing ml-3">
+                        There are no albums.
+                    </div>
+                <?php } else { ?>
+                    <form action="addalbum.html" method="get" id="album">
+                        <fieldset>
+                            <!-- Album Name-->
+                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['albums']->value, 'albums_id');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['albums_id']->value) {
+?>                             
+                                <div class="form-group">
+                                    <label class="col-md-8 control-label" for="<?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
+}">
+                                    <a class="album-link-unstyled" href="viewalbum.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
+</a></label>
+                                    <div class="col-md-8">
+                                        <p><b><a class="album-link-unstyled" 
+                                        href="../artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Artist_Name'];?>
+</a></b></p>
+                                    </div>
+                                </div>
+                                <hr>
+                            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                        </fieldset>
+                    </form>
+                <?php }?>
                 <div class="row ml-3 mb-3">
                     <button type="add" form="album" value="add">Add</button>
                 </div>
@@ -95,4 +120,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}
