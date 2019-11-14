@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 15:22:15
+/* Smarty version 3.1.33, created on 2019-11-13 19:09:44
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcc65f7e8b4e3_11827584',
+  'unifunc' => 'content_5dcc9b48699911_84827416',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6513b2b94f7ed91f70a4d50a41bb98da3577ea51' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\songs.tpl',
-      1 => 1573676533,
+      1 => 1573690140,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcc9b48699911_84827416 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +53,7 @@ function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
+                    <p><a class="link-unstyled" href="album/album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -80,7 +80,7 @@ function content_5dcc65f7e8b4e3_11827584 (Smarty_Internal_Template $_smarty_tpl)
                 <!--Table-->
                 <?php if ($_smarty_tpl->tpl_vars['nosongs']->value) {?>
                     <div class="col-8 bg-light nospacing">
-                        There are no songs available.
+                        There are no songs.
                     </div>
                 <?php } else { ?>
                     <form action="<?php echo $_smarty_tpl->tpl_vars['WEB_URL']->value;?>

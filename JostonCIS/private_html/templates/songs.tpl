@@ -30,7 +30,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="album/album.html">My Albums</a></p>
+                    <p><a class="link-unstyled" href="album/album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -57,7 +57,7 @@
                 <!--Table-->
                 {if $nosongs}
                     <div class="col-8 bg-light nospacing">
-                        There are no songs available.
+                        There are no songs.
                     </div>
                 {else}
                     <form action="{$WEB_URL}songs/deletesongsfromsongs.html" method="get" id="deletesongs">
