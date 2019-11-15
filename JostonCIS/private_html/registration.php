@@ -1,7 +1,7 @@
 <?php
-    require_once "config.inc.php";
-    require_once "dbconfig.inc.php";
-    
+session_start();
+?>
+<?php
 // define variables and initialize with empty values
 $firstname = $lastname = $username = $passwordStored = $password = $country = $dob = "";
 
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <script>
     let timer = setTimeout(function () {
-        window.location = 'login.html'
+        window.location = 'profile.html'
     }, 5000);
 </script>
 

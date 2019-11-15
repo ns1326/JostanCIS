@@ -35,15 +35,17 @@
                 <div class="row mt-4 ml-3">
                     <h2>Profile Details</h2>
                 </div>
-                <p class="text-danger"> Error: Please fill out the form and try again.</p>
-                <form action="registration.php" method="get" id="registration">
+                <div class="row mt-4 ml-3">
+                    <p class="text-danger"> Error: Please try again.</p>
+                </div>
+                <form action="registration.php" method="post" id="registration">
                     <fieldset>
                         <!-- First Name Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
                                 <input id="firstname" name="firstname" type="text" placeholder="First Name"
-                                       class="form-control input-md" value=" <?php isset($_POST['firstname'])?$name:"; ?> required>
+                                       class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
