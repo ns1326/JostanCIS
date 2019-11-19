@@ -35,14 +35,14 @@
                 <div class="row mt-4 ml-3">
                     <h2>Profile Details</h2>
                 </div>
-                <form action="registration.php" method="post" id="registration">
+                <form action="login.html" method="post" id="registration">
                     <fieldset>
                         <!-- First Name Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
                                 <input id="firstname" name="firstname" type="text" placeholder="First Name"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" >
                             </div>
                         </div>
                         <hr>
@@ -51,7 +51,7 @@
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
                                 <input id="lastname" name="lastname" type="text" placeholder="Last Name"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" >
                             </div>
                         </div>
                         <hr>
@@ -60,7 +60,7 @@
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
                                 <input id="username" name="username" type="text" placeholder="Username"
-                                       class="form-control input-md">
+                                    class="form-control input-md" >
                             </div>
                         </div>
                         <hr>
@@ -69,7 +69,14 @@
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
                                 <input id="password" name="password" type="text" placeholder="Password"
-                                       class="form-control input-md">
+                                    class="form-control input-md" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
+                            <div class="col-md-8">
+                                <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
+                                    class="form-control input-md ">
                             </div>
                         </div>
                         <hr>
@@ -78,7 +85,7 @@
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="E-mail"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" >
                             </div>
                         </div>
                         <hr>
@@ -86,8 +93,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="mm/dd/year"
-                                       class="form-control input-md" typeof="date" required>
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd"
+                                    class="form-control input-md" typeof="date">
                             </div>
                         </div>
                         <hr>
@@ -96,7 +103,7 @@
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
                                 <input id="country" name="country" type="text" placeholder="Country"
-                                       class="form-control input-md">
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>
