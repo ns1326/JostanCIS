@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 23:07:58
+/* Smarty version 3.1.33, created on 2019-11-20 20:15:35
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd36a9e391f14_83804187',
+  'unifunc' => 'content_5dd5e537413a20_38163414',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f7fab4495f23faaf87d62c6e6e6efa6966c5fd01' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\registration.tpl',
-      1 => 1574136414,
+      1 => 1574298905,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd5e537413a20_38163414 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +47,7 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="login.html">Login Here</a></p>
+                    <p><a class="link-unstyled" href="login.php">Login Here</a></p>
                 </div>
                 <hr>
             </div>
@@ -58,14 +58,14 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                 <div class="row mt-4 ml-3">
                     <h2>Profile Details</h2>
                 </div>
-                <form action="login.html" method="post" id="registration">
+                <form action="registration.php" method="post" id="registration">
                     <fieldset>
                         <!-- First Name Text input-->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
                                 <input id="firstname" name="firstname" type="text" placeholder="First Name"
-                                    class="form-control input-md" >
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -74,7 +74,7 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
                                 <input id="lastname" name="lastname" type="text" placeholder="Last Name"
-                                    class="form-control input-md" >
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -83,7 +83,7 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
                                 <input id="username" name="username" type="text" placeholder="Username"
-                                    class="form-control input-md" >
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -92,8 +92,12 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
                                 <input id="password" name="password" type="text" placeholder="Password"
-                                    class="form-control input-md" >
+                                    class="form-control input-md" required>
                             </div>
+                        </div>
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message1']->value;?>
+</p>
                         </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
@@ -104,19 +108,27 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                         <hr>
                         <!-- Email Text input-->
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message2']->value;?>
+</p>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="E-mail"
-                                    class="form-control input-md" >
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
                         <!-- Date Of Birth Text input-->
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message3']->value;?>
+</p>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd"
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" required
                                     class="form-control input-md" typeof="date">
                             </div>
                         </div>
@@ -125,7 +137,7 @@ function content_5dd36a9e391f14_83804187 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country"
+                                <input id="country" name="country" type="text" placeholder="Country" required
                                     class="form-control input-md">
                             </div>
                         </div>
