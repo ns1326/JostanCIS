@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-19 22:50:08
-  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\playlists.tpl' */
+/* Smarty version 3.1.33, created on 2019-11-20 20:20:33
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\playlists.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd4b7f0b75307_00120573',
+  'unifunc' => 'content_5dd5e661eb0659_37310940',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'e3fac10c1b5e30ea87bc25616ce633861521742d' => 
+    'cdd1a0fe390160cc98a889203289e85504fe94bd' => 
     array (
-      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\playlists.tpl',
-      1 => 1574221574,
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\playlists.tpl',
+      1 => 1574299067,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd4b7f0b75307_00120573 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd5e661eb0659_37310940 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

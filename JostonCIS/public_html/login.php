@@ -2,44 +2,37 @@
     require_once "config.inc.php";
     require_once "dbconfig.inc.php";
 
-$_SESSION["passwordStored"] = "hello";
-// define variables and initialize with empty values
-$username = $password = "";
-$message = "error";
+$message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["username"])) {
-        header("Location: loginerror.html");
-        exit();
-    } else {
-        $username = $_POST["username"];
+
+    $sql = "Select User_ID as userID, Username, Password from User";
+    $stmt = $pdo->prepare($sql);        
+    $stmt->execute();    
+
+    if($stmt->rowCount() > 0){
+        $check = array();
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+            $check[] = array(
+                "userID" => $row['userID'],
+                "user" => $row['Username'],
+                "password" => $row['Password'],
+            );
+        }
     }
-    if (empty($_POST["password"])) {
-        header("Location: loginerror.html");
-        exit();
-    } else {
-        $password = $_POST["password"];
-        $passwordStored = hash('sha256', $password, FALSE);
-    }
-    $message = $username . " " . $passwordStored;
+
+    foreach ($check as $check_id) {
+        if ($_POST['username'] == $check_id['user'] && $_POST['password'] == $check_id['password']) {              
+            $user = $check_id['userID'];
+            $_SESSION['user'] = $user;
+            header("location: profile.php");                                      
+        } else {
+            $message = "**Incorrect Username and Password Combination**";
+        }
+    } 
 }
-?>
 
-<html lang="en">
-<body>
+$smarty->assign("message", $message);
+$smarty->display("login.tpl");
 
-<a> Username Field Input : <?php echo $username; ?> </a> <br>
-<a> Password Field Input : <?php echo $password; ?> </a> <br>
-<a> Password Stored : <?php echo $passwordStored; ?> </a> <br>
-<a> Data sent to database : <?php echo $message;
-     ?></a> <br>
-
-<p>This page is to show what the user typed in and what is sent to the database</p>
-<p>You will be redirected in 5 seconds</p>
-<script>
-    var timer = setTimeout(function () {
-        window.location = 'profile.html'
-    }, 5000);
-</script>
-</body>
-</html>
+    

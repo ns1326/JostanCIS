@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-20 20:15:35
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\registration.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dd5e537413a20_38163414',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f7fab4495f23faaf87d62c6e6e6efa6966c5fd01' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\registration.tpl',
+      1 => 1574298905,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dd5e537413a20_38163414 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +47,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="login.html">Login Here</a></p>
+                    <p><a class="link-unstyled" href="login.php">Login Here</a></p>
                 </div>
                 <hr>
             </div>
@@ -42,7 +65,7 @@
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
                                 <input id="firstname" name="firstname" type="text" placeholder="First Name"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -51,7 +74,7 @@
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
                                 <input id="lastname" name="lastname" type="text" placeholder="Last Name"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -60,7 +83,7 @@
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
                                 <input id="username" name="username" type="text" placeholder="Username"
-                                       class="form-control input-md">
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
@@ -69,25 +92,44 @@
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
                                 <input id="password" name="password" type="text" placeholder="Password"
-                                       class="form-control input-md">
+                                    class="form-control input-md" required>
+                            </div>
+                        </div>
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message1']->value;?>
+</p>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
+                            <div class="col-md-8">
+                                <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
+                                    class="form-control input-md ">
                             </div>
                         </div>
                         <hr>
                         <!-- Email Text input-->
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message2']->value;?>
+</p>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="E-mail"
-                                       class="form-control input-md" required>
+                                    class="form-control input-md" required>
                             </div>
                         </div>
                         <hr>
                         <!-- Date Of Birth Text input-->
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message3']->value;?>
+</p>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="mm/dd/year"
-                                       class="form-control input-md" typeof="date" required>
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" required
+                                    class="form-control input-md" typeof="date">
                             </div>
                         </div>
                         <hr>
@@ -95,8 +137,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country"
-                                       class="form-control input-md">
+                                <input id="country" name="country" type="text" placeholder="Country" required
+                                    class="form-control input-md">
                             </div>
                         </div>
                         <hr>
@@ -110,4 +152,5 @@
     </div>
 </div>
 </body>
-</html>
+</html><?php }
+}

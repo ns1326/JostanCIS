@@ -34,7 +34,7 @@ INSERT INTO Song (Title, Artist_FK, Album_FK) values
 
 -- Create User
 Insert into User values
-	(1, "jostonchan", DEFAULT, "Joston", "Chan", "jc1608@messiah.edu", 1);
+	(1, "csadmin", "t3amplay", DEFAULT, "Joston", "Chan", "jc1608@messiah.edu", "1980-10-10", "America",1);
     
 -- Create album to user link
 Insert into User_Album values

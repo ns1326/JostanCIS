@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-19 21:02:42
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\forgotpassword.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dd49ec2b6e752_15165758',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '839e8d0b763464fe6e366de6abaf948c6c1cb9d4' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\forgotpassword.tpl',
+      1 => 1574215358,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dd49ec2b6e752_15165758 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +47,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="login.html">Login Here</a></p>
+                    <p><a class="link-unstyled" href="login.php">Login Here</a></p>
                 </div>
                 <hr>
             </div>
@@ -32,10 +55,14 @@
                 <div class="row mt-4 ml-3">
                     <h1>Music Now Forgot Password</h1>
                 </div>
-                <form action="forgotconfirm.html" method="get" id="forgotpassword">
+                <form action="forgotpassword.php" method="post" id="forgotpassword">
                     <fieldset>
                         <!-- E-mail Text input-->
                         <div class="form-group">
+                            <div class="col-8 bg-light">
+                                <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+                            </div>
                             <label class="col-md-6 control-label" for="email">Enter your e-mail</label>
                             <div class="col-md-8">
                                 <input id="email" name="email" type="text" placeholder="E-mail"
@@ -46,10 +73,11 @@
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="submit" form="forgotpassword" value="Submit">Submit</button>
+                    <button type="submit" form="forgotpassword" name="submit">Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}
