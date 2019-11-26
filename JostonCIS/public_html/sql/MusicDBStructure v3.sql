@@ -56,11 +56,14 @@ DEFAULT CHARACTER SET = latin1;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `teamjoston_db`.`User` (
   `User_ID` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Username` VARCHAR(50) NOT NULL,
   `Password` CHAR(40) NOT NULL,
   `Salt` VARCHAR(16) NULL,
   `First_Name` VARCHAR(50) NOT NULL,
   `Last_Name` VARCHAR(50) NOT NULL,
   `Email` VARCHAR(100) NOT NULL,
+  `Date_of_Birth` Date NOT NULL,
+  `Country` VARCHAR(50) NOT NULL,  
   `Is_Admin` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`User_ID`),
   UNIQUE INDEX `Email_UNIQUE` (`Email` ASC))

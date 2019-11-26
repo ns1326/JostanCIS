@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-11-19 19:53:18
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\forgotconfirm.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5dd48e7e018070_85651284',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '15a9dec99d47b4665033855d550171021d2a62c8' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\forgotconfirm.tpl',
+      1 => 1574211190,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5dd48e7e018070_85651284 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +47,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="registration.html">Register Here</a></p>
+                    <p><a class="link-unstyled" href="registration.php">Register Here</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4">
@@ -32,7 +55,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="login.html">Login Here</a></p>
+                    <p><a class="link-unstyled" href="login.php">Login Here</a></p>
                 </div>
                 <hr>
             </div>
@@ -50,4 +73,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}

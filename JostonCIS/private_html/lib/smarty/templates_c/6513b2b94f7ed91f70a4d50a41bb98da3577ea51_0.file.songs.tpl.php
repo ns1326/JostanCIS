@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 23:59:12
+/* Smarty version 3.1.33, created on 2019-11-19 22:50:06
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dccdf2080ec89_95006682',
+  'unifunc' => 'content_5dd4b7ee775e26_22072117',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6513b2b94f7ed91f70a4d50a41bb98da3577ea51' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\songs.tpl',
-      1 => 1573707526,
+      1 => 1574221547,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dccdf2080ec89_95006682 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd4b7ee775e26_22072117 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +49,7 @@ function content_5dccdf2080ec89_95006682 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="profile.html">Account Overview</a></p>
+                    <p><a class="link-unstyled" href="profile.php">Account Overview</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -69,7 +69,7 @@ function content_5dccdf2080ec89_95006682 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="login.html">Log Out</a></p>
+                    <p><a class="link-unstyled" href="login.php">Log Out</a></p>
                 </div>
                 <hr>
             </div>
