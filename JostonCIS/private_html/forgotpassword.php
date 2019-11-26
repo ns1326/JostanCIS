@@ -2,6 +2,8 @@
 require "config.inc.php";
 require "dbconfig.inc.php";
 
+// ini_set(SMTP,'ssl://smtp.gmail.com');
+// ini_set(smtp_port,'465');
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
