@@ -71,19 +71,19 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td><a class="songs-link-unstyled" href="../title/BeautifulPeople.html">Beautiful People (feat. Khalid)</a></td>
-                                <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
+                                <td><a class="songs-link-unstyled" href="viewalbum.tpl">No.6 Collaboration Project</a></td>
                                 <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td><a class="songs-link-unstyled" href="../title/IDon'tCare.html">I Don't Care (with Justin Bieber)</a></td>
-                                <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
+                                <td><a class="songs-link-unstyled" href="viewalbum.tpl">No.6 Collaboration Project</a></td>
                                 <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.html">Take Me Back to London (feat. Stormzy)</a></td>
-                                <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
+                                <td><a class="songs-link-unstyled" href="viewalbum.tpl">No.6 Collaboration Project</a></td>
                                 <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
                             </tr>
                         </tbody>
