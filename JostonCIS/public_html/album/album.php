@@ -1,5 +1,5 @@
 <?php
-    require_once "../private_html/config.inc.php";
+    require_once "../../private_html/config.inc.php";
     require_once PRIVATE_HTML . "dbconfig.inc.php";
 
 $sql = "SELECT DISTINCT Album_Name, Artist_Name FROM Album

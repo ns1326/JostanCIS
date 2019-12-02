@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-12-01 23:24:42
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\delete_album.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5de4920ab36585_35265337',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8b65616625e34a42a885b8002e03c28c05904c58' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\delete_album.tpl',
+      1 => 1575260680,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5de4920ab36585_35265337 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -109,4 +132,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}
