@@ -1,6 +1,6 @@
 <?php
-require_once "config.inc.php";
-require_once "dbconfig.inc.php";
+    require_once "../private_html/config.inc.php";
+    require_once PRIVATE_HTML . "dbconfig.inc.php";
 
 $sql = "SELECT Song_ID as SongID, Song.Title as Title , Album_Name, Artist_Name, Playlist_Name FROM Song	           
             JOIN Album ON Album.Album_ID = Song.Album_FK

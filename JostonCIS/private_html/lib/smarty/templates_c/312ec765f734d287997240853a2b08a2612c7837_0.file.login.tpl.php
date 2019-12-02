@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-12-01 23:07:55
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\login.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5de48e1bbf02d8_63537325',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '312ec765f734d287997240853a2b08a2612c7837' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\login.tpl',
+      1 => 1574299067,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5de48e1bbf02d8_63537325 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +60,8 @@
                     <h1>Music Now Login</h1> <br>
                 </div>
                 <div class="col-8 bg-light">
-                    <p class="text-danger">{$message}</p>
+                    <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
                 </div>
 
                 <form action="login.php" method="post" id="login">
@@ -69,4 +93,5 @@
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}

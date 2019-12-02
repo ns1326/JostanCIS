@@ -1,6 +1,6 @@
 <?php
-require_once "../config.inc.php";
-require_once "../dbconfig.inc.php";
+    require_once "../private_html/config.inc.php";
+    require_once PRIVATE_HTML . "dbconfig.inc.php";
 
 $sql = "SELECT DISTINCT Album_Name, Artist_Name FROM Album
             JOIN Song ON Album.Album_ID = Song.Album_FK

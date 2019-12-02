@@ -1,4 +1,27 @@
-<!--Profile Page-->
+<?php
+/* Smarty version 3.1.33, created on 2019-12-01 23:08:00
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\profile.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5de48e208ee9f0_16252520',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f1f71f88b08e1978aa0d152ac5f0c122746d6d0b' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\profile.tpl',
+      1 => 1574299067,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5de48e208ee9f0_16252520 (Smarty_Internal_Template $_smarty_tpl) {
+?><!--Profile Page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +42,17 @@
         </div>
         <div class="row">
             <div class="col-4 bg-secondary text-white">
-                {foreach $profile as $profile_id}
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['profile']->value, 'profile_id');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['profile_id']->value) {
+?>
                 <div class="row">
                         <img src="images/placeholder-face-big.png"
                             class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
                             alt="Profile Image Holder">
-                        <p class="col-12 font-weight-bolder center">{$profile_id.username}</p>
+                        <p class="col-12 font-weight-bolder center"><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['username'];?>
+</p>
                     </div>
                     <hr>
                     <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -65,7 +93,8 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="username">Username:</label>
                                 <div class="col-md-8">
-                                    <p>{$profile_id.username}</p>
+                                    <p><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['username'];?>
+</p>
                                 </div>
                             </div>
                             <hr>
@@ -73,7 +102,8 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="password">Password:</label>
                                 <div class="col-md-8">
-                                    <p>{$profile_id.password}</p>
+                                    <p><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['password'];?>
+</p>
                                 </div>
                             </div>
                             <hr>
@@ -81,7 +111,8 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="email">Email:</label>
                                 <div class="col-md-8">
-                                    <p>{$profile_id.email}</p>
+                                    <p><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['email'];?>
+</p>
                                 </div>
                             </div>
                             <hr>
@@ -89,7 +120,8 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="dob">Date of Birth:</label>
                                 <div class="col-md-8">
-                                    <p>{$profile_id.dob} (yyyy-mm-dd)</p>
+                                    <p><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['dob'];?>
+ (yyyy-mm-dd)</p>
                                 </div>
                             </div>
                             <hr>
@@ -97,7 +129,8 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="country">Country:</label>
                                 <div class="col-md-6">
-                                    <p>{$profile_id.country}</p>
+                                    <p><?php echo $_smarty_tpl->tpl_vars['profile_id']->value['country'];?>
+</p>
                                 </div>
                             </div>
                             <hr>
@@ -109,10 +142,14 @@
                     <div class="row ml-3 mb-3">
                         <button type="delete" form="profile" name="delete">Delete</button>
                     </div>
-                {/foreach}
+                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>
         </div>
     </div>
 </div>
 </body>
-</html>
+</html><?php }
+}

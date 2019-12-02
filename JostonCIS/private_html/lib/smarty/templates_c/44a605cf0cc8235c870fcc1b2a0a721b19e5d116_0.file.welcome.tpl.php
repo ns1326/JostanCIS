@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-19 19:53:18
-  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\private_html\templates\forgotconfirm.tpl' */
+/* Smarty version 3.1.33, created on 2019-12-01 23:05:36
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\welcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd48e7e018070_85651284',
+  'unifunc' => 'content_5de48d9070d777_51941294',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '15a9dec99d47b4665033855d550171021d2a62c8' => 
+    '44a605cf0cc8235c870fcc1b2a0a721b19e5d116' => 
     array (
-      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\private_html\\templates\\forgotconfirm.tpl',
-      1 => 1574211190,
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\welcome.tpl',
+      1 => 1574299067,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd48e7e018070_85651284 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de48d9070d777_51941294 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,15 +60,23 @@ function content_5dd48e7e018070_85651284 (Smarty_Internal_Template $_smarty_tpl)
                 <hr>
             </div>
             <div class="col-8 bg-light">
-                <div class="row mt-4 ml-3">
-                    <h1>Music Now Confirmation Message</h1>
+                <div class="row mt-4 ml-3 underlined">
+                    <h1>Welcome to Music Now.</h1>
                 </div>
-                <div>
-                    <p>If the email you entered is associated with an account,
-                        an email will be sent with instructions to reset your
-                        password. If you did not receive an email,
-                        click "register Here" to register for an account. </p>
-                </div>
+                <div class="description ml-3 mt-2">
+                    <h2>Description</h2>                
+                    <p><b>Music Now</b> is a Swedish-American media services provider which is 
+                        based in Luxembourg. Founded in 2006 in Sweden, the company's primary business is its 
+                        audio streaming platform that provides DRM-protected music and podcasts from record 
+                        labels and media companies.</p>
+
+                    <p>Launched on October 7, 2008, the <b>Music Now</b> platform provides access to over 50 million tracks. 
+                        Users can browse by parameters such as artist, album, or genre, and can create, edit, and share 
+                        playlists. <b>Music Now</b> is available in most of Europe and the Americas, Australia, New Zealand, 
+                        and parts of Africa and Asia, and on most modern devices, including Windows, macOS, and Linux 
+                        computers, and iOS, and Android smartphones and tablets. As of October 2019, the company
+                         had 248 million monthly active users, including 113 million paying subscribers.</p>
+                </div> 
             </div>
         </div>
     </div>
