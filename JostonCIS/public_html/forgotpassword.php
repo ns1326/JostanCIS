@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             header("location: forgotconfirm.php");
         } else {
-            $message = "Email does not exist in the database."; 
+            $message = "Email does not exist."; 
         }
 
                       
