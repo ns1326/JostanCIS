@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account Overview</title>
+    <title>My Albums</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
@@ -30,7 +30,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="album.php">My Albums</a></p>
+                    <p><a class="link-unstyled" href="../album/album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -52,50 +52,45 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>Add Album</h1>
+                    <h1>My Albums</h1>
                 </div>
-                <form action="album.php" method="get" id="addalbum">
+                <br>
+                <form action="addalbum.tpl" method="get" id="album">
                     <fieldset>
-                        <!-- Album -->
+                        <!-- Album Name-->
+                        <!-- Album One Deleted-->
+                        <!-- Album Two -->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="album">Album</label>
-                            <div class="col-md-10">
-                                <input id="album" name="album" type="text" placeholder="Album of the song"
-                                       class="form-control input-md">
+                            <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"
+                                                                                   href="viewalbum.html">No.6 Collaboration Project</a></label>
+                            <div class="col-md-8">
+                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></b></p>
                             </div>
                         </div>
                         <hr>
-                        <!-- Artist -->
+                        <!-- Album Three-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="artist">Artist</label>
-                            <div class="col-md-10">
-                                <input id="artist" name="artist" type="text" placeholder="Artist"
-                                       class="form-control input-md">
+                            <label class="col-md-4 control-label" for="FreeSpirit">Free Spirit</label>
+                            <div class="col-md-8">
+                                <p><b>Khalid</b></p>
                             </div>
                         </div>
                         <hr>
-                        <!-- Added By -->
+                        <!-- Album Four-->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="added">Recently Added By</label>
-                            <div class="col-md-10">
-                                <input id="added" name="added" type="text" placeholder="User at mm/dd/year"
-                                       class="form-control input-md">
+                            <label class="col-md-4 control-label" for="HereasinHeaven">Here as in Heaven</label>
+                            <div class="col-md-8">
+                                <p><b>Elevation Worship</b></p>
                             </div>
                         </div>
-                        <hr>
-                        <!-- Text Review-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="dob">Review</label>
-                            <div class="col-md-10">
-                                <textarea class="form-control" id="review" rows="4" placeholder="This song is LIT!!!"></textarea>
-                            </div>
-                        </div>
-                        <hr>
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="submit" form="addalbum" value="submit">Submit</button>
+                    <button type="add" form="album" value="add">Add</button>
                 </div>
+                <form method="get" action="delete_album.html">
+                    <button type="submit">Delete Album</button>
+                </form>
             </div>
         </div>
     </div>
