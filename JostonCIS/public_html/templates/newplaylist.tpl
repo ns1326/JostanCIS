@@ -74,7 +74,7 @@
                                 Bieber)</a></td>
                             <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
                                 Project</a></td>
-                            <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
+                            <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -82,7 +82,7 @@
                                 London (feat. Stormzy)</a></td>
                             <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
                                 Project</a></td>
-                            <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
+                            <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
                         </tr>
                         </tbody>
                     </table>

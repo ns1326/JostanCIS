@@ -56,7 +56,7 @@
                     <h1>Ed Sheeran</h1>
                 </div>
                 <div class="row ml-3">
-                    <img src="artistimages/EdSheeran.jpg" class="img-fluid img-size" alt="Artist Picture">
+                    <img src="../artist/artistimages/EdSheeran.jpg" class="img-fluid img-size" alt="Artist Picture">
                 </div>
                 <div class="row mt-4 ml-3 underlined">
                     <h2>Who is Ed Sheeran?</h2>

@@ -64,7 +64,7 @@
                             <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"
                                                                                    href="viewalbum.html">No.6 Collaboration Project</a></label>
                             <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></b></p>
+                                <p><b><a class="album-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></b></p>
                             </div>
                         </div>
                         <hr>

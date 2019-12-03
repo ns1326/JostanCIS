@@ -69,7 +69,7 @@
                                     <a class="album-link-unstyled" href="viewalbum.html">{$albums_id.Album_Name}</a></label>
                                     <div class="col-md-8">
                                         <p><b><a class="album-link-unstyled" 
-                                        href="../artist/EdSheeran.html">{$albums_id.Artist_Name}</a></b></p>
+                                        href="EdSheeran.tpl">{$albums_id.Artist_Name}</a></b></p>
                                     </div>
                                 </div>
                                 <hr>
