@@ -80,7 +80,7 @@
                 <div class="row ml-3 mb-3">
                     <button type="add" form="album" value="add">Add</button>
                 </div>
-                <form method="get" action="delete_album.html">
+                <form method="get" action="delete_album.php">
                     <div class="ml-3">
                         <button type="submit">Delete Album</button>
                     </div>                    
