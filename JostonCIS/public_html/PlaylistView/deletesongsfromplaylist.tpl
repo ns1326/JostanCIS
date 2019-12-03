@@ -55,7 +55,7 @@
                 </div>
                 <!--REMEMBER TO MAKE THE HTML BELOW TO PHP-->
                 <!--Table-->        
-                <form action="newplaylist.html" method="POST" id="viewplaylist">
+                <form action="newplaylist.tpl" method="POST" id="viewplaylist">
                 <!-- <form action="deletesongsforplaylist.html" method="POST" id="viewalbum"> -->
                     <table class="table table-dark">
                         <thead>

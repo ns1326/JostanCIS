@@ -7,6 +7,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+
 </head>
 <body class="bg-primary">
 
@@ -54,63 +55,7 @@
                     <h1>Playlists</h1>
                 </div>
                 <div class="row mt-4 ml-3">
-                 <h2>BANGERS!</h2>
-                        <style type="text/css">
-                            #tfheader{
-                                background-color:#c3dfef;
-                            }
-                            #tfnewsearch{
-                                float:right;
-                                padding:20px;
-                            }
-                            .tftextinput{
-                                margin: 0;
-                                padding: 5px 15px;
-                                font-family: Arial, Helvetica, sans-serif;
-                                font-size:14px;
-                                border:1px solid black; border-right:0px;
-                                border-top-left-radius: 5px 5px;
-                                border-bottom-left-radius: 5px 5px;
-                            }
-                            .tfbutton {
-                                margin: 0;
-                                padding: 5px 15px;
-                                font-family: Arial, Helvetica, sans-serif;
-                                font-size:14px;
-                                text-align: center;
-                                text-decoration: none;
-                                color: #ffffff;
-                                border: solid 1px #0076a3; border-right:0px;
-                                background: black;
-                                background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-                                background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-                                border-top-right-radius: 5px 5px;
-                                border-bottom-right-radius: 5px 5px;
-                            }
-                            .tfbutton:hover {
-                                text-decoration: none;
-                                background:  black;
-                                background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-                                background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-                            }
-                            /* Fixes submit button height problem in Firefox */
-                            .tfbutton::-moz-focus-inner {
-                                border: 0;
-                            }
-                            .tfclear{
-                                clear:both;
-                            }
-                        </style>
-                    </head>
-                    <body>
-                    <div id="tfheader">
-                        <form id="tfnewsearch" method="get" action="http://www.google.com">
-                            <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
-                        </form>
-                        <div class="tfclear"></div>
-                    </div>
-
-
+                    <h2>BANGERS</h2>
                 </div>
                 <div class="row">
                     <table class="table table-dark">
@@ -125,14 +70,6 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td><a class="songs-link-unstyled" href="../title/BeautifulPeople.html">Beautiful People
-                                (feat. Khalid)</a></td>
-                            <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
-                                Project</a></td>
-                            <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
                             <td><a class="songs-link-unstyled" href="../title/IDon'tCare.html">I Don't Care (with Justin
                                 Bieber)</a></td>
                             <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
@@ -140,7 +77,7 @@
                             <td><a class="songs-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
+                            <th scope="row">2</th>
                             <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.html">Take Me Back to
                                 London (feat. Stormzy)</a></td>
                             <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
@@ -155,7 +92,7 @@
                         <button type="add" form="album" value="add">Add</button>
                     </div>
                     <div class="ml-3 mb-3">
-                        <form method="get" action="deletesongsfromplaylist.html">
+                        <form method="get" action="deletesongsfromplaylist.tpl">
                             <button type="submit">Update Playlists</button>
                         </form>
                     </div>
