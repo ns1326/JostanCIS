@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-01 23:26:25
+/* Smarty version 3.1.33, created on 2019-12-03 14:35:12
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de492711f0b60_48536688',
+  'unifunc' => 'content_5de6b8f08c6169_36664128',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73771fd4d364fcaf161ef59a90869e59aa0dc091' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album.tpl',
-      1 => 1575260783,
+      1 => 1575401412,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de492711f0b60_48536688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de6b8f08c6169_36664128 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,7 +113,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="row ml-3 mb-3">
                     <button type="add" form="album" value="add">Add</button>
                 </div>
-                <form method="get" action="delete_album.html">
+                <form method="get" action="delete_album.php">
                     <div class="ml-3">
                         <button type="submit">Delete Album</button>
                     </div>                    
