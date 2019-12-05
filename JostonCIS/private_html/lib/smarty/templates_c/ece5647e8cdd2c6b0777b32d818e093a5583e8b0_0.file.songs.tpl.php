@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-01 23:18:26
+/* Smarty version 3.1.33, created on 2019-12-05 14:16:18
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de49092807ce6_51249935',
+  'unifunc' => 'content_5de9578214ecb5_08916068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ece5647e8cdd2c6b0777b32d818e093a5583e8b0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\songs.tpl',
-      1 => 1574299067,
+      1 => 1575573377,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de49092807ce6_51249935 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de9578214ecb5_08916068 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +57,7 @@ function content_5de49092807ce6_51249935 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -83,8 +83,8 @@ function content_5de49092807ce6_51249935 (Smarty_Internal_Template $_smarty_tpl)
                         There are no songs.
                     </div>
                 <?php } else { ?>
-                    <!-- <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs"> -->
-                    <form action="songs/addsong.html" method="get" id="songs">
+                    <!-- <form action="songs/deletesongsfromsongs.php" method="get" id="deletesongs"> -->
+                    <form action="songs/addsong.php" method="get" id="songs">
                         <table class="table table-dark">
                             <thead>
                             <tr>
@@ -104,11 +104,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['songs_id']->value) {
                                     <tr>
                                         <th scope="row"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['SongID'];?>
 </th>
-                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
+                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
 </a></td>
-                                        <td><a class="songs-link-unstyled" href="album/viewalbum.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Album_Name'];?>
+                                        <td><a class="songs-link-unstyled" href="album/viewalbum.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Album_Name'];?>
 </a></td>
-                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Artist_Name'];?>
+                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Artist_Name'];?>
 </a></td>
                                         <td>
                                             <select name="Add to Playlist" style="width: 100px">
@@ -152,6 +152,21 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <button type="submit">Update Playlists</button>
                     </form>
                     </div>
+                </div>
+                 <hr>                        
+                <!-- Text Review-->
+                <div class="row ml-3 mb-3">
+                    This will be your work space emily!
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="dob">Review</label>
+                    <div class="col-md-11">
+                        <textarea class="form-control" id="review" rows="4" placeholder="This song is on FIRE!!!"></textarea>
+                    </div>  
+                </div>                
+                <div class="row ml-3 mb-3">
+                    <button type="submit" form="BeautifulPeople" value="submit">Submit</button>
                 </div>
             </div>
         </div>

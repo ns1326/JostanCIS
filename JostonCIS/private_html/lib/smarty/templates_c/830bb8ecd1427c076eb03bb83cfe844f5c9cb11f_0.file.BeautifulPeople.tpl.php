@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 3.1.33, created on 2019-12-05 14:08:42
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\BeautifulPeople.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5de955bae2d624_14349973',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '830bb8ecd1427c076eb03bb83cfe844f5c9cb11f' => 
+    array (
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\BeautifulPeople.tpl',
+      1 => 1575572919,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5de955bae2d624_14349973 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +43,8 @@
             <div class="col-4 bg-secondary text-white">
                 <div class="row">
                     <img src="../images/placeholder-face-big.png"
-                         class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
-                         alt="Profile Image Holder">
+                        class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
+                        alt="Profile Image Holder">
                     <p class="col-12 font-weight-bolder center">Username</p>
                 </div>
                 <hr>
@@ -34,7 +57,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -52,15 +75,15 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>I Don't Care (with Justin Bieber)</h1>
+                    <h1>Beautiful People (feat. Khalid)</h1>
                 </div>
-                <form action="IDon'tCare.html" method="get" id="IDon'tCare">
+                <form action="updatetitle.php" method="get" id="BeautifulPeople">
                     <fieldset>
                         <!-- Performed By -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="performed">Performed By</label>
                             <div class="col-md-11">
-                                <p>Ed Sheeran, Justin Bieber</p>
+                                <p>Ed Sheeran, Khalid</p>
                             </div>
                         </div>
                         <hr>
@@ -68,7 +91,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="written">Written By</label>
                             <div class="col-md-11">
-                                <p>Ed Sheeran, Fred Gibson, Jason Boyd, Justin Bieber, Max Martin, Shellback</p>
+                                <p>Ed Sheeran, FRED, Khalid Robinson, Max Martin, Shellback</p>
                             </div>
                         </div>
                         <hr>
@@ -76,7 +99,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="produced">Produced By</label>
                             <div class="col-md-11">
-                                <p>FRED, Max Martin, Shellback</p>
+                                <p>Ed Sheeran, Fred Gibson, Max Martin, Shellback</p>
                             </div>
                         </div>
                         <hr>
@@ -93,16 +116,18 @@
                             <label class="col-md-4 control-label" for="dob">Review</label>
                             <div class="col-md-11">
                                 <p>This song is on FIRE!!!</p>
+                                <!-- <textarea class="form-control" id="review" rows="4"></textarea> -->
                             </div>  
                         </div>
                         <hr>
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="update" form="IDon'tCare" value="update">Update</button>
+                    <button type="update" form="BeautifulPeople" value="update">Update</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
-</html>
+</html><?php }
+}

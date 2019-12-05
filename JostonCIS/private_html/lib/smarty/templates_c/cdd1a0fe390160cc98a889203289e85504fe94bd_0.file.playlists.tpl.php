@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-01 23:18:29
+/* Smarty version 3.1.33, created on 2019-12-05 14:04:23
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\playlists.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de4909511ca53_73465282',
+  'unifunc' => 'content_5de954b72167f9_97959233',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdd1a0fe390160cc98a889203289e85504fe94bd' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\playlists.tpl',
-      1 => 1574299067,
+      1 => 1575571760,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de4909511ca53_73465282 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de954b72167f9_97959233 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +57,7 @@ function content_5de4909511ca53_73465282 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -87,10 +87,10 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['playlists_id']->value) {
 ?>
-                        <form action="PlaylistView/CreatePlaylist.html" method="get" id="createplaylist">
+                        <form action="PlaylistView/CreatePlaylist.php" method="get" id="createplaylist">
                             <div class="row mt-4 ml-3">
                                 <h2><a class="album-link-unstyled" 
-                                href="PlaylistView/PlaylistView.html"><?php echo $_smarty_tpl->tpl_vars['playlists_id']->value['Playlist_Name'];?>
+                                href="PlaylistView/PlaylistView.php"><?php echo $_smarty_tpl->tpl_vars['playlists_id']->value['Playlist_Name'];?>
 </a></h2>
                             </div>
                             <hr>

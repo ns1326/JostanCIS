@@ -110,6 +110,21 @@
                     </form>
                     </div>
                 </div>
+                 <hr>                        
+                <!-- Text Review-->
+                <div class="row ml-3 mb-3">
+                    This will be your work space emily!
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="dob">Review</label>
+                    <div class="col-md-11">
+                        <textarea class="form-control" id="review" rows="4" placeholder="This song is on FIRE!!!"></textarea>
+                    </div>  
+                </div>                
+                <div class="row ml-3 mb-3">
+                    <button type="submit" form="BeautifulPeople" value="submit">Submit</button>
+                </div>
             </div>
         </div>
     </div>

@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -52,16 +52,15 @@
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>Beautiful People (feat. Khalid)</h1>
+                    <h1>Take Me Back to London (feat.Stormzy)</h1>
                 </div>
-                <form action="BeautifulPeople.html" method="get" id="BeautifulPeople">
+                <form action="TakeMeBackToLondon.php" method="get" id="TakeMeBackToLondon">
                     <fieldset>
                         <!-- Performed By -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="performed">Performed By</label>
                             <div class="col-md-11">
-                                <input id="performed" name="performed" type="text" placeholder="Ed Sheeran, Khalid"
-                                    class="form-control input-md">
+                                <p>Ed Sheeran, Stormzy</p>
                             </div>
                         </div>
                         <hr>
@@ -69,9 +68,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="written">Written By</label>
                             <div class="col-md-11">
-                                <input id="written" name="written" type="text" 
-                                    placeholder="Ed Sheeran, FRED, Khalid Robinson, Max Martin, Shellback"
-                                    class="form-control input-md">
+                                <p>Ed Sheeran, Fred Gibson, Max Martin, Michael Omari, Shellback</p>
                             </div>
                         </div>
                         <hr>
@@ -79,9 +76,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="produced">Produced By</label>
                             <div class="col-md-11">
-                                <input id="produced" name="produced" type="text" 
-                                    placeholder="Ed Sheeran, Fred Gibson, Max Martin, Shellback" 
-                                    class="form-control input-md">
+                                <p>FRED, Kenny Beats, Skrillex</p>
                             </div>
                         </div>
                         <hr>
@@ -89,8 +84,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="added">Recently Added By</label>
                             <div class="col-md-11">
-                                <input id="produced" name="produced" type="text" placeholder="User at 10/2/2019" 
-                                    class="form-control input-md">
+                                <p>User at 10/2/2019</p>
                             </div>
                         </div>
                         <hr>                        
@@ -98,14 +92,14 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Review</label>
                             <div class="col-md-11">
-                                <textarea class="form-control" id="review" rows="4" placeholder="This song is on FIRE!!!"></textarea>
+                                <p>This song is on FIRE!!!</p>
                             </div>  
                         </div>
                         <hr>
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="submit" form="BeautifulPeople" value="submit">Submit</button>
+                    <button type="update" form="TakeMeBackToLondon" value="update">Update</button>
                 </div>
             </div>
         </div>
