@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:17:22
-  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\delete_album.tpl' */
+/* Smarty version 3.1.33, created on 2019-12-05 14:27:07
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album\delete_album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de957c2276f45_89168977',
+  'unifunc' => 'content_5de95a0bbbc261_31684654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8b65616625e34a42a885b8002e03c28c05904c58' => 
+    'a19d78d35b3f3bbf890969e0cbe7e733187fa824' => 
     array (
-      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\delete_album.tpl',
-      1 => 1575572417,
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album\\delete_album.tpl',
+      1 => 1575573940,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de957c2276f45_89168977 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de95a0bbbc261_31684654 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

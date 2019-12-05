@@ -4,4 +4,4 @@
 require_once "../../private_html/config.inc.php";
 require_once PRIVATE_HTML . "dbconfig.inc.php";
 
-$smarty->display("PlaylistView.tpl");
+$smarty->display("playlist/PlaylistView.tpl");

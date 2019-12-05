@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-01 23:08:00
+/* Smarty version 3.1.33, created on 2019-12-05 14:17:12
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de48e208ee9f0_16252520',
+  'unifunc' => 'content_5de957b83461c0_43474724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f1f71f88b08e1978aa0d152ac5f0c122746d6d0b' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\profile.tpl',
-      1 => 1574299067,
+      1 => 1575571977,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de48e208ee9f0_16252520 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de957b83461c0_43474724 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Profile Page-->
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +64,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['profile_id']->value) {
                     </div>
                     <hr>
                     <div class="row ml-3 mt-2">
-                        <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
+                        <p><a class="link-unstyled" href="artists.php">My Artists</a></p>
                     </div>
                     <hr>
                     <div class="row ml-3 mt-2">

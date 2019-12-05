@@ -2,4 +2,4 @@
 require_once "../../private_html/config.inc.php";
 require_once PRIVATE_HTML . "dbconfig.inc.php";
 
-$smarty->display("EdSheeran.tpl");
+$smarty->display("artist/EdSheeran.tpl");

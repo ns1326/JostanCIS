@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:17:18
-  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album.tpl' */
+/* Smarty version 3.1.33, created on 2019-12-05 14:27:03
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de957be5de045_33408364',
+  'unifunc' => 'content_5de95a07c28256_82401967',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '73771fd4d364fcaf161ef59a90869e59aa0dc091' => 
+    '5f37df68f36b5ae121ec90b260e351b4250d73bd' => 
     array (
-      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album.tpl',
-      1 => 1575572417,
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album\\album.tpl',
+      1 => 1575573952,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de957be5de045_33408364 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de95a07c28256_82401967 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

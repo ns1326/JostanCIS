@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:17:22
-  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\delete_album.tpl' */
+/* Smarty version 3.1.33, created on 2019-12-05 14:24:20
+  from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album\addalbum.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de957c2276f45_89168977',
+  'unifunc' => 'content_5de959644b4a96_02398113',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8b65616625e34a42a885b8002e03c28c05904c58' => 
+    '85e92337c342de988cd25fb5684e2976fa8255f9' => 
     array (
-      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\delete_album.tpl',
-      1 => 1575572417,
+      0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album\\addalbum.tpl',
+      1 => 1575573852,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de957c2276f45_89168977 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de959644b4a96_02398113 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Albums</title>
+    <title>Account Overview</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
@@ -53,7 +53,7 @@ function content_5de957c2276f45_89168977 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="album.php">My Albums</a></p>
+                    <p><a class="link-unstyled" href="../album/album.php">My Albums</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -75,59 +75,50 @@ function content_5de957c2276f45_89168977 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="col-8 bg-light">
                 <div class="row mt-4 ml-3">
-                    <h1>My Albums</h1>
+                    <h1>Add Album</h1>
                 </div>
-                <br>
-                <form action="addalbum.php" method="get" id="album">
+                <form action="../album/album.php" method="get" id="addalbum">
                     <fieldset>
-                        <!-- Album Name-->
-                        <div class="form-group" background-color="black">
-                            <label class="col-md-4 control-label" for="HeartBreakonaFullMoon">Heart Break on a Full Moon</label>
-                            <div class="col-md-8">
-                                <p><b>Chris Brown</b></p>
-                            </div>
-                            <div class="col-md-8">
-                                <button formaction="delete_confirm.php">Delete Album</button>
-                            </div>                            
-                        </div>       
-                        <hr>
-                        <!-- Album Two -->
+                        <!-- Album -->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"                                 
-                                href="viewalbum.php">No.6 Collaboration Project</a></label>
-                            <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></b></p>
+                            <label class="col-md-4 control-label" for="album">Album</label>
+                            <div class="col-md-10">
+                                <input id="album" name="album" type="text" placeholder="Album of the song"
+                                       class="form-control input-md">
                             </div>
-                            <div class="col-md-8">
-                                <button formaction="delete_confirm.php">Delete Album</button>
-                            </div>  
                         </div>
                         <hr>
-                        <!-- Album Three-->
+                        <!-- Artist -->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="FreeSpirit">Free Spirit</label>
-                            <div class="col-md-8">
-                                <p><b>Khalid</b></p>
+                            <label class="col-md-4 control-label" for="artist">Artist</label>
+                            <div class="col-md-10">
+                                <input id="artist" name="artist" type="text" placeholder="Artist"
+                                       class="form-control input-md">
                             </div>
-                            <div class="col-md-8">
-                                <button formaction="delete_confirm.php">Delete Album</button>
-                            </div>  
                         </div>
                         <hr>
-                        <!-- Album Four-->
+                        <!-- Added By -->
                         <div class="form-group">
-                            <label class="col-md-4 control-label" for="HereasinHeaven">Here as in Heaven</label>
-                            <div class="col-md-8">
-                                <p><b>Elevation Worship</b></p>
+                            <label class="col-md-4 control-label" for="added">Recently Added By</label>
+                            <div class="col-md-10">
+                                <input id="added" name="added" type="text" placeholder="User at mm/dd/year"
+                                       class="form-control input-md">
                             </div>
-                            <div class="col-md-8">
-                                <button formaction="delete_confirm.php">Delete Album</button>
-                            </div>                              
+                        </div>
+                        <hr>
+                        <!-- Text Review-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="dob">Review</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="review" rows="4" placeholder="This song is LIT!!!"></textarea>
+                            </div>
                         </div>
                         <hr>
                     </fieldset>
                 </form>
-
+                <div class="row ml-3 mb-3">
+                    <button type="submit" form="addalbum" value="submit">Submit</button>
+                </div>
             </div>
         </div>
     </div>

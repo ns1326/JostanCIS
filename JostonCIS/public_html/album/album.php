@@ -24,4 +24,4 @@ if($stmt->rowCount() == 0){
 
 $smarty->assign("nosongs", $noalbums);
 $smarty->assign("albums", $albums);
-$smarty->display("album.tpl");
+$smarty->display("album/album.tpl");
