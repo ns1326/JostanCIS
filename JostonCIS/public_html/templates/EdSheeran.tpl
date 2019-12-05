@@ -35,7 +35,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -56,7 +56,7 @@
                     <h1>Ed Sheeran</h1>
                 </div>
                 <div class="row ml-3">
-                    <img src="../artist/artistimages/EdSheeran.jpg" class="img-fluid img-size" alt="Artist Picture">
+                    <img src="artistimages/EdSheeran.jpg" class="img-fluid img-size" alt="Artist Picture">
                 </div>
                 <div class="row mt-4 ml-3 underlined">
                     <h2>Who is Ed Sheeran?</h2>

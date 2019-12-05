@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -60,8 +60,8 @@
                         There are no songs.
                     </div>
                 {else}
-                    <!-- <form action="songs/deletesongsfromsongs.html" method="get" id="deletesongs"> -->
-                    <form action="songs/addsong.html" method="get" id="songs">
+                    <!-- <form action="songs/deletesongsfromsongs.php" method="get" id="deletesongs"> -->
+                    <form action="songs/addsong.php" method="get" id="songs">
                         <table class="table table-dark">
                             <thead>
                             <tr>
@@ -76,9 +76,9 @@
                             {foreach $songs as $songs_id}                                
                                     <tr>
                                         <th scope="row">{$songs_id.SongID}</th>
-                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.html">{$songs_id.Title}</a></td>
-                                        <td><a class="songs-link-unstyled" href="album/viewalbum.html">{$songs_id.Album_Name}</a></td>
-                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.html">{$songs_id.Artist_Name}</a></td>
+                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.php">{$songs_id.Title}</a></td>
+                                        <td><a class="songs-link-unstyled" href="album/viewalbum.php">{$songs_id.Album_Name}</a></td>
+                                        <td><a class="songs-link-unstyled" href="artist/EdSheeran.php">{$songs_id.Artist_Name}</a></td>
                                         <td>
                                             <select name="Add to Playlist" style="width: 100px">
                                                 <option value="default">Add to Playlist</option>

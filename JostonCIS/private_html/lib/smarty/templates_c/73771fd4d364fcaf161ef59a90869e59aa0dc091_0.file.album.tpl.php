@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-03 14:35:12
+/* Smarty version 3.1.33, created on 2019-12-05 13:45:43
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de6b8f08c6169_36664128',
+  'unifunc' => 'content_5de950570ca5b0_77099923',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73771fd4d364fcaf161ef59a90869e59aa0dc091' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album.tpl',
-      1 => 1575401412,
+      1 => 1575571323,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de6b8f08c6169_36664128 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de950570ca5b0_77099923 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,7 +98,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['albums_id']->value) {
 </a></label>
                                     <div class="col-md-8">
                                         <p><b><a class="album-link-unstyled" 
-                                        href="../artist/EdSheeran.html"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Artist_Name'];?>
+                                        href="EdSheeran.tpl"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Artist_Name'];?>
 </a></b></p>
                                     </div>
                                 </div>

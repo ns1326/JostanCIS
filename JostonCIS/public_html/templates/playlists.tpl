@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -60,10 +60,10 @@
                     </div>
                 {else}
                     {foreach $playlists as $playlists_id}
-                        <form action="PlaylistView/CreatePlaylist.html" method="get" id="createplaylist">
+                        <form action="PlaylistView/CreatePlaylist.php" method="get" id="createplaylist">
                             <div class="row mt-4 ml-3">
                                 <h2><a class="album-link-unstyled" 
-                                href="PlaylistView/PlaylistView.html">{$playlists_id.Playlist_Name}</a></h2>
+                                href="PlaylistView/PlaylistView.php">{$playlists_id.Playlist_Name}</a></h2>
                             </div>
                             <hr>
                         </form>

@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -60,16 +60,16 @@
                         There are no albums.
                     </div>
                 {else}
-                    <form action="addalbum.html" method="get" id="album">
+                    <form action="addalbum.php" method="get" id="album">
                         <fieldset>
                             <!-- Album Name-->
                             {foreach $albums as $albums_id}                             
                                 <div class="form-group">
                                     <label class="col-md-8 control-label" for="{$albums_id.Album_Name}}">
-                                    <a class="album-link-unstyled" href="viewalbum.html">{$albums_id.Album_Name}</a></label>
+                                    <a class="album-link-unstyled" href="viewalbum.php">{$albums_id.Album_Name}</a></label>
                                     <div class="col-md-8">
                                         <p><b><a class="album-link-unstyled" 
-                                        href="EdSheeran.tpl">{$albums_id.Artist_Name}</a></b></p>
+                                        href="../artist/EdSheeran.php">{$albums_id.Artist_Name}</a></b></p>
                                     </div>
                                 </div>
                                 <hr>

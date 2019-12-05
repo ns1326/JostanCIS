@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -70,19 +70,19 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td><a class="songs-link-unstyled" href="../title/IDon'tCare.html">I Don't Care (with Justin
+                            <td><a class="songs-link-unstyled" href="../title/IDon'tCare.php">I Don't Care (with Justin
                                 Bieber)</a></td>
-                            <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
+                            <td><a class="songs-link-unstyled" href="../album/viewalbum.php">No.6 Collaboration
                                 Project</a></td>
-                            <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
+                            <td><a class="songs-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.html">Take Me Back to
+                            <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.php">Take Me Back to
                                 London (feat. Stormzy)</a></td>
-                            <td><a class="songs-link-unstyled" href="../album/viewalbum.html">No.6 Collaboration
+                            <td><a class="songs-link-unstyled" href="../album/viewalbum.php">No.6 Collaboration
                                 Project</a></td>
-                            <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
+                            <td><a class="songs-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -92,7 +92,7 @@
                         <button type="add" form="album" value="add">Add</button>
                     </div>
                     <div class="ml-3 mb-3">
-                        <form method="get" action="deletesongsfromplaylist.tpl">
+                        <form method="get" action="deletesongsfromplaylist.php">
                             <button type="submit">Update Playlists</button>
                         </form>
                     </div>

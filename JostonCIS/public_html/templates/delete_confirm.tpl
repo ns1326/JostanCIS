@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -55,16 +55,16 @@
                     <h1>My Albums</h1>
                 </div>
                 <br>
-                <form action="addalbum.tpl" method="get" id="album">
+                <form action="addalbum.php" method="get" id="album">
                     <fieldset>
                         <!-- Album Name-->
                         <!-- Album One Deleted-->
                         <!-- Album Two -->
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"
-                                                                                   href="viewalbum.html">No.6 Collaboration Project</a></label>
+                                                                                   href="viewalbum.php">No.6 Collaboration Project</a></label>
                             <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></b></p>
+                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></b></p>
                             </div>
                         </div>
                         <hr>
@@ -88,7 +88,7 @@
                 <div class="row ml-3 mb-3">
                     <button type="add" form="album" value="add">Add</button>
                 </div>
-                <form method="get" action="delete_album.html">
+                <form method="get" action="delete_album.php">
                     <button type="submit">Delete Album</button>
                 </form>
             </div>

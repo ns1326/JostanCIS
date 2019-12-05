@@ -54,7 +54,7 @@
                 <div class="row mt-4 ml-3">
                     <h1>Add song</h1>
                 </div>
-                <form action="viewalbum.html" method="get" id="addsongforalbum">
+                <form action="viewalbum.php" method="get" id="addsongforalbum">
                     <fieldset>
                         <!-- Title -->
                         <div class="form-group">

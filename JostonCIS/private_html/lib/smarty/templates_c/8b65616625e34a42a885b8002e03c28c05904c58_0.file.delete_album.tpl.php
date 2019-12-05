@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-01 23:24:42
+/* Smarty version 3.1.33, created on 2019-12-05 13:45:48
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\delete_album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de4920ab36585_35265337',
+  'unifunc' => 'content_5de9505c85f1f5_81652801',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b65616625e34a42a885b8002e03c28c05904c58' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\delete_album.tpl',
-      1 => 1575260680,
+      1 => 1575571323,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de4920ab36585_35265337 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5de9505c85f1f5_81652801 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ function content_5de4920ab36585_35265337 (Smarty_Internal_Template $_smarty_tpl)
                             <label class="col-md-4 control-label" for="Purpose"><a class="album-link-unstyled"                                 
                                 href="viewalbum.html">No.6 Collaboration Project</a></label>
                             <div class="col-md-8">
-                                <p><b><a class="album-link-unstyled" href="../artist/EdSheeran.html">Ed Sheeran</a></b></p>
+                                <p><b><a class="album-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></b></p>
                             </div>
                             <div class="col-md-8">
                                 <button formaction="delete_confirm.html">Delete Album</button>

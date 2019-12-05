@@ -34,7 +34,7 @@
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
-                    <p><a class="link-unstyled" href="../artists.html">My Artists</a></p>
+                    <p><a class="link-unstyled" href="../artists.php">My Artists</a></p>
                 </div>
                 <hr>
                 <div class="row ml-3 font-weight-bolder mt-4 primarycategory">
@@ -56,7 +56,7 @@
                 </div>
                 <!--Table-->
                 <form action="../songs.php" method="get" id="songs">
-                <!-- <form action="songs/addsong.html" method="get" id="songs"> -->
+                <!-- <form action="songs/addsong.php" method="get" id="songs"> -->
                     <table class="table table-dark">
                             <thead>
                                 <tr>
@@ -71,23 +71,23 @@
                                 <tr>
                                     <th><input type="checkbox" name="1"></th>
                                     <th scope="row">1</th>
-                                    <td><a class="songs-link-unstyled" href="../title/BeautifulPeople.html">Beautiful People (feat. Khalid)</a></td>
-                                    <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
-                                    <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
+                                    <td><a class="songs-link-unstyled" href="../title/BeautifulPeople.php">Beautiful People (feat. Khalid)</a></td>
+                                    <td><a class="songs-link-unstyled" href="viewalbum.php">No.6 Collaboration Project</a></td>
+                                    <td><a class="songs-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></td>
                                 </tr>
                                 <tr>
                                     <th><input type="checkbox" name="2"></th>
                                     <th scope="row">2</th>
-                                    <td><a class="songs-link-unstyled" href="../title/IDon'tCare.html">I Don't Care (with Justin Bieber)</a></td>
-                                    <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
-                                    <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
+                                    <td><a class="songs-link-unstyled" href="../title/IDon'tCare.php">I Don't Care (with Justin Bieber)</a></td>
+                                    <td><a class="songs-link-unstyled" href="viewalbum.php">No.6 Collaboration Project</a></td>
+                                    <td><a class="songs-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></td>
                                 </tr>
                                 <tr>
                                     <th><input type="checkbox" name="3"></th>
                                     <th scope="row">3</th>
-                                    <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.html">Take Me Back to London (feat. Stormzy)</a></td>
-                                    <td><a class="songs-link-unstyled" href="viewalbum.html">No.6 Collaboration Project</a></td>
-                                    <td><a class="songs-link-unstyled" href="EdSheeran.tpl">Ed Sheeran</a></td>
+                                    <td><a class="songs-link-unstyled" href="../title/TakeMeBackToLondon.php">Take Me Back to London (feat. Stormzy)</a></td>
+                                    <td><a class="songs-link-unstyled" href="viewalbum.php">No.6 Collaboration Project</a></td>
+                                    <td><a class="songs-link-unstyled" href="../artist/EdSheeran.php">Ed Sheeran</a></td>
                                 </tr>
                             </tbody>
                         </table>
