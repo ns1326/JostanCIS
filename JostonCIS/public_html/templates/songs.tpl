@@ -112,8 +112,21 @@
                 </div>
                  <hr>                        
                 <!-- Text Review-->
-                <div class="row ml-3 mb-3">
-                    This will be your work space emily!
+                <div class="row mt-4 ml-3">
+                    <div class="row">
+                        <div class="column" style="background-color:#aaa;">
+                            <h2>Bieber </h2>
+                            <p>These are FIRE!!!</p>
+                        </div>
+                        <div class="column" style="background-color:#bbb;">
+                            <h2>Lokan </h2>
+                            <p>Something slight!</p>
+                        </div>
+                        <div class="column" style="background-color:#ccc;">
+                            <h2>Breezy</h2>
+                            <p>Can't wait for more !</p>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="form-group">
