@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-07 16:30:04
+/* Smarty version 3.1.33, created on 2019-12-10 14:10:13
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dec19dc71ecd5_46338982',
+  'unifunc' => 'content_5defed9544e7f1_83770429',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1056912e1349f8846c7da164c9dfc4791e0ffae0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\registration.tpl',
-      1 => 1574299067,
+      1 => 1576004879,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dec19dc71ecd5_46338982 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5defed9544e7f1_83770429 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,6 +79,10 @@ function content_5dec19dc71ecd5_46338982 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                         <hr>
                         <!-- Username Text input-->
+                        <div class="col-8 bg-light">
+                            <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['usermessage']->value;?>
+</p>
+                        </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">

@@ -6,10 +6,11 @@ $message1 = "";
 $message2 = "";
 $message3 = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['submit'])) {
         // if (preg_match("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a
         //                 -zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z
         //                 0-9-]{0,61}[a-zA-Z0-9])?)*$", $_POST['email'])) {
+        if ( trim($_POST['username'], " ") != ""){
                 if ( $_POST['password'] ==  $_POST['confirmpassword']) { //check whether they both are the same
                         $sql = "Insert into User Values
                                 (DEFAULT, :u, :p, DEFAULT, :f, :l, :e, :dob, :c, 0)";
@@ -25,12 +26,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
                         header("location: login.php");
                 }      
-                $message1 = "Password is not the same";   
+                $message1 = "Password is not the same";  
+        } 
+        $usermessage = "Username must have characters";  
         // }        
         // $message2 = "Your email must consists of @ and .com, .edu and etc";
         // $message3 = "Date format must must yyyy-mm-dd";
 }
 
+$smarty->assign("usermessage", $usermessage);
 $smarty->assign("message1", $message1);
 $smarty->assign("message2", $message2);
 $smarty->assign("message3", $message3);
