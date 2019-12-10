@@ -122,7 +122,7 @@
                     </fieldset>
                 </form>
                 <div class="row ml-3 mb-3">
-                    <button type="submit" form="registration" value="Submit">Submit</button>
+                    <button type="submit" form="registration" value="submit">Submit</button>
                 </div>
             </div>
         </div>

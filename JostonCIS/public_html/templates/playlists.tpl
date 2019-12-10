@@ -60,7 +60,7 @@
                     </div>
                 {else}
                     {foreach $playlists as $playlists_id}
-                        <form action="PlaylistView/CreatePlaylist.php" method="get" id="createplaylist">
+                        <form action="PlaylistView/CreatePlaylist.php" method="post" id="createplaylist">
                             <div class="row mt-4 ml-3">
                                 <h2><a class="album-link-unstyled" 
                                 href="PlaylistView/PlaylistView.php">{$playlists_id.Playlist_Name}</a></h2>
