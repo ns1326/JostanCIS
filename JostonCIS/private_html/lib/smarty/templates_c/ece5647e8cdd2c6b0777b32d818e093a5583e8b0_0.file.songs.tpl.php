@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:16:18
+/* Smarty version 3.1.33, created on 2019-12-10 15:16:26
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de9578214ecb5_08916068',
+  'unifunc' => 'content_5deffd1a788ca2_20349912',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ece5647e8cdd2c6b0777b32d818e093a5583e8b0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\songs.tpl',
-      1 => 1575573377,
+      1 => 1576008968,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de9578214ecb5_08916068 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5deffd1a788ca2_20349912 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,8 +155,21 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
                  <hr>                        
                 <!-- Text Review-->
-                <div class="row ml-3 mb-3">
-                    This will be your work space emily!
+                <div class="row mt-4 ml-3" >
+                    <div class="row">
+                        <div class="column px-2" style="background-color:#aaa;">
+                            <h2>Bieber </h2>
+                            <p>These are FIRE!!!</p>
+                        </div>
+                        <div class="column px-2" style="background-color:#bbb;">
+                            <h2>Lokan </h2>
+                            <p>Something slight!</p>
+                        </div>
+                        <div class="column px-2" style="background-color:#ccc;">
+                            <h2>Breezy</h2>
+                            <p>Can't wait for more !</p>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="form-group">
