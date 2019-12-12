@@ -66,7 +66,7 @@
                             {foreach $albums as $albums_id}                             
                                 <div class="form-group">
                                     <label class="col-md-8 control-label" for="{$albums_id.Album_Name}}">
-                                    <a class="album-link-unstyled" href="viewalbum.php">{$albums_id.Album_Name}</a></label>
+                                    <a class="album-link-unstyled" href="../viewalbum.php?id={$albums_id.Album_ID}">{$albums_id.Album_Name}</a></label>
                                     <div class="col-md-8">
                                         <p><b><a class="album-link-unstyled" 
                                         href="../artist/EdSheeran.php">{$albums_id.Artist_Name}</a></b></p>
