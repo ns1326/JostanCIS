@@ -29,7 +29,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="salt">Temporary Password</label>
                         <div class="col-md-8">
-                        <input id="salt" name="salt" type="text" placeholder=""
+                        <input id="salt" name="salt" type="password" placeholder=""
                             class="form-control input-md" >
                     </div>
 
@@ -37,7 +37,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="password">Password</label>
                         <div class="col-md-8">
-                        <input id="password" name="password" type="text" placeholder=""
+                        <input id="password" name="password" type="password" placeholder=""
                             class="form-control input-md" >
                     </div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                         <div class="col-md-8">
-                            <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
+                            <input id="confirmpassword" name="confirmpassword" type="password" placeholder=""
                                 class="form-control input-md ">
                         </div>
                     </div>

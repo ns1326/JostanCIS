@@ -78,7 +78,7 @@
                             <br>
                             <label class="col-md-4 control-label" for="newpassword">New Password</label>
                             <div class="col-md-8">
-                                <input id="newpassword" name="newpassword" type="text" placeholder=""
+                                <input id="newpassword" name="newpassword" type="password" placeholder=""
                                        class="form-control input-md">
                             </div>
                             <br>
@@ -88,7 +88,7 @@
                             </div>
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
-                                <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
+                                <input id="confirmpassword" name="confirmpassword" type="password" placeholder=""
                                        class="form-control input-md">
                             </div>
                         </div>

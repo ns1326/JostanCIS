@@ -49,7 +49,7 @@ Update User
 	set Salt = "asdasd"
 Where Email = "asd";
 
-Delete from User where user_id = 4;
+Delete from User where user_id = 6;
 Insert into User Values (DEFAULT, "asd", "asd", DEFAULT, "asd", "asd", "asd", "1970-02-01", "asd", 1);
 Select Username, Password, First_Name, Last_Name, Email, Gender From User;
 
