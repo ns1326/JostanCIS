@@ -22,7 +22,7 @@
                     <img src="images/placeholder-face-big.png"
                          class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
                          alt="Profile Image Holder">
-                    <p class="col-12 font-weight-bolder center">{$_SESSION["user"]}</p>
+                    <p class="col-12 font-weight-bolder center">{$username}</p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">

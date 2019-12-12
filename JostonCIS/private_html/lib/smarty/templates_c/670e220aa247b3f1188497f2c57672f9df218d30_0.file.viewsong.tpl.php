@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 21:16:10
+/* Smarty version 3.1.33, created on 2019-12-12 00:55:47
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\viewsong.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df1a2ea348486_98847577',
+  'unifunc' => 'content_5df1d6631ca530_11350623',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '670e220aa247b3f1188497f2c57672f9df218d30' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\viewsong.tpl',
-      1 => 1576116251,
+      1 => 1576130118,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df1a2ea348486_98847577 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1d6631ca530_11350623 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +45,7 @@ function content_5df1a2ea348486_98847577 (Smarty_Internal_Template $_smarty_tpl)
                     <img src="images/placeholder-face-big.png"
                          class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
                          alt="Profile Image Holder">
-                    <p class="col-12 font-weight-bolder center"><?php echo $_smarty_tpl->tpl_vars['_SESSION']->value["user"];?>
+                    <p class="col-12 font-weight-bolder center"><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
 </p>
                 </div>
                 <hr>

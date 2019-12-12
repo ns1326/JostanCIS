@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:04:23
+/* Smarty version 3.1.33, created on 2019-12-12 00:53:35
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\playlists.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de954b72167f9_97959233',
+  'unifunc' => 'content_5df1d5dfec3248_23545263',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdd1a0fe390160cc98a889203289e85504fe94bd' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\playlists.tpl',
-      1 => 1575571760,
+      1 => 1576129975,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de954b72167f9_97959233 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1d5dfec3248_23545263 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +45,8 @@ function content_5de954b72167f9_97959233 (Smarty_Internal_Template $_smarty_tpl)
                     <img src="images/placeholder-face-big.png"
                          class="rounded mx-auto d-block mt-3 mr-3 ml-3 mb-3 img-fluid"
                          alt="Profile Image Holder">
-                    <p class="col-12 font-weight-bolder center">Username</p>
+                    <p class="col-12 font-weight-bolder center"><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+</p>
                 </div>
                 <hr>
                 <div class="row ml-3 mt-2">
@@ -87,7 +88,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['playlists_id']->value) {
 ?>
-                        <form action="PlaylistView/CreatePlaylist.php" method="get" id="createplaylist">
+                        <form action="PlaylistView/CreatePlaylist.php" method="post" id="createplaylist">
                             <div class="row mt-4 ml-3">
                                 <h2><a class="album-link-unstyled" 
                                 href="PlaylistView/PlaylistView.php"><?php echo $_smarty_tpl->tpl_vars['playlists_id']->value['Playlist_Name'];?>
