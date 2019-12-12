@@ -76,8 +76,8 @@
                             {foreach $songs as $songs_id}                                
                                     <tr>
                                         <th scope="row">{$songs_id.SongID}</th>
-                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.php">{$songs_id.Title}</a></td>
-                                        <td><a class="songs-link-unstyled" href="album/viewalbum.php">{$songs_id.Album_Name}</a></td>
+                                        <td><a class="songs-link-unstyled" href="viewsong.php?id={$songs_id.SongID - 1}">{$songs_id.Title}</a></td>
+                                        <td><a class="songs-link-unstyled" href="../viewalbum.php">{$songs_id.Album_Name}</a></td>
                                         <td><a class="songs-link-unstyled" href="artist/EdSheeran.php">{$songs_id.Artist_Name}</a></td>
                                         <td>
                                             <select name="Add to Playlist" style="width: 100px">
@@ -112,21 +112,8 @@
                 </div>
                  <hr>                        
                 <!-- Text Review-->
-                <div class="row mt-4 ml-3" >
-                    <div class="row">
-                        <div class="column px-2" style="background-color:#aaa;">
-                            <h2>Bieber </h2>
-                            <p>These are FIRE!!!</p>
-                        </div>
-                        <div class="column px-2" style="background-color:#bbb;">
-                            <h2>Lokan </h2>
-                            <p>Something slight!</p>
-                        </div>
-                        <div class="column px-2" style="background-color:#ccc;">
-                            <h2>Breezy</h2>
-                            <p>Can't wait for more !</p>
-                        </div>
-                    </div>
+                <div class="row ml-3 mb-3">
+                    This will be your work space emily!
                 </div>
                 <hr>
                 <div class="form-group">
