@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-12 13:24:00
+/* Smarty version 3.1.33, created on 2019-12-12 14:34:14
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df285c0aa58a3_21146356',
+  'unifunc' => 'content_5df29636a076e9_63833844',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1056912e1349f8846c7da164c9dfc4791e0ffae0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\registration.tpl',
-      1 => 1576175024,
+      1 => 1576179251,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df29636a076e9_63833844 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,7 +64,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
-                                <input id="firstname" name="firstname" type="text" placeholder="First Name"
+                                <input id="firstname" name="firstname" type="text" placeholder="First Name" value ="<?php echo $_smarty_tpl->tpl_vars['firstname']->value;?>
+"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -73,7 +74,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
-                                <input id="lastname" name="lastname" type="text" placeholder="Last Name"
+                                <input id="lastname" name="lastname" type="text" placeholder="Last Name" value ="<?php echo $_smarty_tpl->tpl_vars['lastname']->value;?>
+"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -86,7 +88,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
-                                <input id="username" name="username" type="text" placeholder="Username"
+                                <input id="username" name="username" type="text" placeholder="Username" value ="<?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -95,7 +98,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
-                                <input id="password" name="password" type="password" placeholder="Password"
+                                <input id="password" name="password" type="password" placeholder="Password" value ="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
+"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -106,7 +110,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
-                                <input id="confirmpassword" name="confirmpassword" type="password" placeholder=""
+                                <input id="confirmpassword" name="confirmpassword" type="password" placeholder="" value ="<?php echo $_smarty_tpl->tpl_vars['confirmpassword']->value;?>
+"
                                     class="form-control input-md ">
                             </div>
                         </div>
@@ -119,7 +124,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="E-mail"
+                                <input id="email" name="email" type="text" placeholder="E-mail" value ="<?php echo $_smarty_tpl->tpl_vars['email']->value;?>
+"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -132,7 +138,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" 
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" value ="<?php echo $_smarty_tpl->tpl_vars['dob']->value;?>
+"
                                     class="form-control input-md" typeof="date">
                             </div>
                         </div>
@@ -141,7 +148,8 @@ function content_5df285c0aa58a3_21146356 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country" 
+                                <input id="country" name="country" type="text" placeholder="Country" value ="<?php echo $_smarty_tpl->tpl_vars['country']->value;?>
+"
                                     class="form-control input-md">
                             </div>
                         </div>

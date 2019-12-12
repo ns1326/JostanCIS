@@ -41,7 +41,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="firstname">First Name</label>
                             <div class="col-md-8">
-                                <input id="firstname" name="firstname" type="text" placeholder="First Name"
+                                <input id="firstname" name="firstname" type="text" placeholder="First Name" value ="{$firstname}"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="lastname">Last Name</label>
                             <div class="col-md-8">
-                                <input id="lastname" name="lastname" type="text" placeholder="Last Name"
+                                <input id="lastname" name="lastname" type="text" placeholder="Last Name" value ="{$lastname}"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
-                                <input id="username" name="username" type="text" placeholder="Username"
+                                <input id="username" name="username" type="text" placeholder="Username" value ="{$username}"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="password">Password</label>
                             <div class="col-md-8">
-                                <input id="password" name="password" type="password" placeholder="Password"
+                                <input id="password" name="password" type="password" placeholder="Password" value ="{$password}"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
-                                <input id="confirmpassword" name="confirmpassword" type="password" placeholder=""
+                                <input id="confirmpassword" name="confirmpassword" type="password" placeholder="" value ="{$confirmpassword}"
                                     class="form-control input-md ">
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="email">Email</label>
                             <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="E-mail"
+                                <input id="email" name="email" type="text" placeholder="E-mail" value ="{$email}"
                                     class="form-control input-md" required>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" 
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" value ="{$dob}"
                                     class="form-control input-md" typeof="date">
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country" 
+                                <input id="country" name="country" type="text" placeholder="Country" value ="{$country}"
                                     class="form-control input-md">
                             </div>
                         </div>

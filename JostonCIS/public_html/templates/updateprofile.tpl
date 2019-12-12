@@ -64,7 +64,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
-                                <input id="username" name="username" type="text" value="{$profile_id.username}"class="form-control input-md">
+                                <input id="username" name="username" type="text" value="{$profile_id.username}" 
+                                class="form-control input-md">
                             </div>
                         </div>
                         <hr>

@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
-                                <input id="username" name="username" type="text" placeholder="Username"
+                                <input id="username" name="username" type="text" placeholder="Username" value="{$username}"
                                        class="form-control input-md" required>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="password">Password </label>
                             <div class="col-md-8">
-                                <input id="password" name="password" type="password" placeholder="Password"
+                                <input id="password" name="password" type="password" placeholder="{$password}"
                                        class="form-control input-md" required>
                             </div>
                         </div>

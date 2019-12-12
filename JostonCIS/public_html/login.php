@@ -2,7 +2,7 @@
     require_once "../private_html/config.inc.php";
     require_once PRIVATE_HTML . "dbconfig.inc.php";
 
-$message = "";
+$username = $password = $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
+    $username = $_POST['username'];
+
     foreach ($check as $check_id) {
         if ($_POST['username'] == $check_id['user'] && $_POST['password'] == $check_id['password']) {              
             $user = $check_id['userID'];
@@ -32,6 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } 
 }
 
+$smarty->assign("username", $username);
+$smarty->assign("password", $password);
 $smarty->assign("message", $message);
 $smarty->display("login.tpl");
 
