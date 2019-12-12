@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:17:13
+/* Smarty version 3.1.33, created on 2019-12-12 01:48:44
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\updateprofile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de957b9a26007_19897899',
+  'unifunc' => 'content_5df1e2cc2c4b08_69299270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '62ac40ad7da8bf904419c13f985428c72efa909c' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\updateprofile.tpl',
-      1 => 1575571977,
+      1 => 1576133322,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de957b9a26007_19897899 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1e2cc2c4b08_69299270 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,6 +86,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['profile_id']->value) {
                 <form action="updateprofile.php" method="post" id="updateprofile">
                     <fieldset>
                         <!-- Username Text input-->
+                        <div class="col-8 bg-light">
+                                <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message1']->value;?>
+</p>
+                            </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
@@ -108,12 +112,12 @@ foreach ($_from as $_smarty_tpl->tpl_vars['profile_id']->value) {
                                 <input id="newpassword" name="newpassword" type="text" placeholder=""
                                        class="form-control input-md">
                             </div>
+                            <br>
                             <!--Line Break-->   
                             <div class="col-8 bg-light">
-                                <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+                                <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message2']->value;?>
 </p>
                             </div>
-                            <br>
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
                                 <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
@@ -150,6 +154,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['profile_id']->value) {
                         </div>
                         <hr>
                         <!-- Date of Birth Text input-->
+                        <div class="col-8 bg-light">
+                                <p class="text-danger"><?php echo $_smarty_tpl->tpl_vars['message3']->value;?>
+</p>
+                            </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">

@@ -3,7 +3,10 @@
     require_once PRIVATE_HTML . "dbconfig.inc.php";
 
 $user = $_SESSION['user'];
-$message = "";
+$message1 = "";
+$message2 = "";
+$message3 = "";
+
 $sql = "Select Username, Password, First_Name, Last_Name, Email, Date_of_Birth, Country 
         FROM User 
         Where User_ID = :u";
@@ -29,15 +32,28 @@ if($stmt->rowCount() > 0){
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    $count = 3;
+
     foreach ($profile as $profile_id) {        
         if (empty($_POST["username"])) {
             $username = $profile_id['username'];
         } else {
-            $username = $_POST["username"];
+            //Username error checking
+            $trimname = trim($_POST['username']);
+            if ($trimname == ""){   // OR if (!preg_match("^[a-zA-Z0-9]*$",$trimname)) {
+                    $message1 = "Username must have characters.";    
+                    $count -= 1;
+            } else {
+                $username = $_POST["username"];
+            }            
         }
         if (!empty($_POST["newpassword"])) {
             if (!empty($_POST["confirmpassword"])) {
-                if ($_POST["newpassword"] == $_POST["confirmpassword"]) {
+                //Password error checking
+                if ($_POST["newpassword"] != $_POST["confirmpassword"]) { //check whether they both are the same
+                    $message2 = "Password is not the same."; 
+                    $count -= 1;                
+                } else {
                     $password = $_POST["confirmpassword"];
                 }     
             }                    
@@ -60,7 +76,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (empty($_POST["dob"])) {
             $dob = $profile_id['dob'];
         } else {
-            $dob = $_POST["dob"];
+
+            //Date error checking
+            function validateDate($date, $format = 'Y-m-d') {
+                $d = DateTime::createFromFormat($format, $date);
+                // The Y ( 4 digits year ) returns TRUE for any integer with any number of digits 
+                // so changing the comparison from == to === fixes the issue.
+                return $d && $d->format($format) === $date;
+            }
+            if (validateDate($_POST['dob'], $format = 'Y-m-d') == false) {
+                    $message3 = "Date format must be yyyy-mm-dd.";
+                    $count -= 1;
+            } else {
+                $dob = $_POST["dob"];
+            }           
         }   
 
         if (empty($_POST["country"])) {
@@ -70,27 +99,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }   
         
     }       
-    $sql = "Update User 
-                set Username = :u,
-                Password = :np,
-                First_Name = :f,
-                Last_Name = :l,
-                Date_of_Birth = :dob,
-                Country = :c
-            WHERE User_ID = :user";
-    $stmt = $pdo->prepare($sql);        
-    $stmt->bindParam(":u", $username);  
-    $stmt->bindParam(":np", $password);
-    $stmt->bindParam(":f", $firstname);
-    $stmt->bindParam(":l", $lastname);
-    $stmt->bindParam(":dob", $dob);
-    $stmt->bindParam(":c", $country);
-    $stmt->bindParam(":user", $user); 
-    $stmt->execute();   
-    
-    header("location: profile.php");
+
+    //if no error or count == 3
+    if ($count == 3) {
+        $sql = "Update User 
+                    set Username = :u,
+                    Password = :np,
+                    First_Name = :f,
+                    Last_Name = :l,
+                    Date_of_Birth = :dob,
+                    Country = :c
+                WHERE User_ID = :user";
+        $stmt = $pdo->prepare($sql);        
+        $stmt->bindParam(":u", $username);  
+        $stmt->bindParam(":np", $password);
+        $stmt->bindParam(":f", $firstname);
+        $stmt->bindParam(":l", $lastname);
+        $stmt->bindParam(":dob", $dob);
+        $stmt->bindParam(":c", $country);
+        $stmt->bindParam(":user", $user); 
+        $stmt->execute();   
+        
+        header("location: profile.php");
+    }
 }
 
-$smarty->assign("message", $message);
+$smarty->assign("message1", $message1);
+$smarty->assign("message2", $message2);
+$smarty->assign("message3", $message3);
 $smarty->assign("profile", $profile);
 $smarty->display("updateprofile.tpl");

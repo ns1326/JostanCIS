@@ -11,6 +11,7 @@ SELECT Song_ID, Song.Title, Album_Name, Artist_Name, Playlist_Name FROM Song
     JOIN User_Playlist ON Playlist.Playlist_ID = User_Playlist.Playlist_FK	
 Order BY Song_ID;
 
+Select * from album;
 Select * from User_Album;
 Select * from User_Artist;
 Select * from User;

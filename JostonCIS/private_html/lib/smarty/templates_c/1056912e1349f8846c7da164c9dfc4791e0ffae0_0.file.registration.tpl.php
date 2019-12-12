@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-10 16:19:56
+/* Smarty version 3.1.33, created on 2019-12-12 01:06:28
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\registration.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df00bfc84d8f2_35047092',
+  'unifunc' => 'content_5df1d8e4f417c3_51480097',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1056912e1349f8846c7da164c9dfc4791e0ffae0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\registration.tpl',
-      1 => 1576012786,
+      1 => 1576130787,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df00bfc84d8f2_35047092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1d8e4f417c3_51480097 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,7 +132,7 @@ function content_5df00bfc84d8f2_35047092 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" required
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" 
                                     class="form-control input-md" typeof="date">
                             </div>
                         </div>
@@ -141,7 +141,7 @@ function content_5df00bfc84d8f2_35047092 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country" required
+                                <input id="country" name="country" type="text" placeholder="Country" 
                                     class="form-control input-md">
                             </div>
                         </div>

@@ -58,6 +58,9 @@
                 <form action="updateprofile.php" method="post" id="updateprofile">
                     <fieldset>
                         <!-- Username Text input-->
+                        <div class="col-8 bg-light">
+                                <p class="text-danger">{$message1}</p>
+                            </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="username">Username</label>
                             <div class="col-md-8">
@@ -78,11 +81,11 @@
                                 <input id="newpassword" name="newpassword" type="text" placeholder=""
                                        class="form-control input-md">
                             </div>
+                            <br>
                             <!--Line Break-->   
                             <div class="col-8 bg-light">
-                                <p class="text-danger">{$message}</p>
+                                <p class="text-danger">{$message2}</p>
                             </div>
-                            <br>
                             <label class="col-md-4 control-label" for="confirmpassword">Confirm Password</label>
                             <div class="col-md-8">
                                 <input id="confirmpassword" name="confirmpassword" type="text" placeholder=""
@@ -116,6 +119,9 @@
                         </div>
                         <hr>
                         <!-- Date of Birth Text input-->
+                        <div class="col-8 bg-light">
+                                <p class="text-danger">{$message3}</p>
+                            </div>
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">

@@ -105,7 +105,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="dob">Date of Birth</label>
                             <div class="col-md-8">
-                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" required
+                                <input id="dob" name="dob" type="text" placeholder="yyyy-mm-dd" 
                                     class="form-control input-md" typeof="date">
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label" for="country">Country</label>
                             <div class="col-md-6">
-                                <input id="country" name="country" type="text" placeholder="Country" required
+                                <input id="country" name="country" type="text" placeholder="Country" 
                                     class="form-control input-md">
                             </div>
                         </div>
