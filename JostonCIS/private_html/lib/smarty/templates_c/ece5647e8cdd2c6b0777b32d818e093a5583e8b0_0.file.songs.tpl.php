@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-10 15:16:26
+/* Smarty version 3.1.33, created on 2019-12-11 21:12:31
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\songs.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5deffd1a788ca2_20349912',
+  'unifunc' => 'content_5df1a20f2fab41_12020280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ece5647e8cdd2c6b0777b32d818e093a5583e8b0' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\songs.tpl',
-      1 => 1576008968,
+      1 => 1576116251,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5deffd1a788ca2_20349912 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1a20f2fab41_12020280 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,9 +104,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['songs_id']->value) {
                                     <tr>
                                         <th scope="row"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['SongID'];?>
 </th>
-                                        <td><a class="songs-link-unstyled" href="title/BeautifulPeople.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
+                                        <td><a class="songs-link-unstyled" href="viewsong.php?id=<?php echo $_smarty_tpl->tpl_vars['songs_id']->value['SongID']-1;?>
+"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Title'];?>
 </a></td>
-                                        <td><a class="songs-link-unstyled" href="album/viewalbum.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Album_Name'];?>
+                                        <td><a class="songs-link-unstyled" href="../viewalbum.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Album_Name'];?>
 </a></td>
                                         <td><a class="songs-link-unstyled" href="artist/EdSheeran.php"><?php echo $_smarty_tpl->tpl_vars['songs_id']->value['Artist_Name'];?>
 </a></td>
@@ -155,21 +156,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
                  <hr>                        
                 <!-- Text Review-->
-                <div class="row mt-4 ml-3" >
-                    <div class="row">
-                        <div class="column px-2" style="background-color:#aaa;">
-                            <h2>Bieber </h2>
-                            <p>These are FIRE!!!</p>
-                        </div>
-                        <div class="column px-2" style="background-color:#bbb;">
-                            <h2>Lokan </h2>
-                            <p>Something slight!</p>
-                        </div>
-                        <div class="column px-2" style="background-color:#ccc;">
-                            <h2>Breezy</h2>
-                            <p>Can't wait for more !</p>
-                        </div>
-                    </div>
+                <div class="row ml-3 mb-3">
+                    This will be your work space emily!
                 </div>
                 <hr>
                 <div class="form-group">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-05 14:27:03
+/* Smarty version 3.1.33, created on 2019-12-11 21:12:33
   from 'C:\Apache24\htdocs\final\JostanCIS\JostonCIS\public_html\templates\album\album.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5de95a07c28256_82401967',
+  'unifunc' => 'content_5df1a21155f550_63506230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5f37df68f36b5ae121ec90b260e351b4250d73bd' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\final\\JostanCIS\\JostonCIS\\public_html\\templates\\album\\album.tpl',
-      1 => 1575573952,
+      1 => 1576116251,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5de95a07c28256_82401967 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1a21155f550_63506230 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +94,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['albums_id']->value) {
                                 <div class="form-group">
                                     <label class="col-md-8 control-label" for="<?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
 }">
-                                    <a class="album-link-unstyled" href="viewalbum.php"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
+                                    <a class="album-link-unstyled" href="../viewalbum.php?id=<?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_ID'];?>
+"><?php echo $_smarty_tpl->tpl_vars['albums_id']->value['Album_Name'];?>
 </a></label>
                                     <div class="col-md-8">
                                         <p><b><a class="album-link-unstyled" 
