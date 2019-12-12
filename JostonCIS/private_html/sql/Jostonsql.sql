@@ -17,6 +17,10 @@ Select * from User_Artist;
 Select * from User;
 select * from Song;
 
+Update User 
+	set Salt = null
+Where User_ID = 9;
+
 -- for album.php
 SELECT Album_ID, Album_Name, Artist_Name FROM Album
 	JOIN User_Album ON Album.Album_ID = User_Album.Album_FK
